@@ -1,0 +1,1711 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dr. Liz Jenkins, Ph.D., LMFT | Relationship Connection Coach & Neuro-Inclusive Couples Specialist</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clay: {
+              50: '#fdf8f6',
+              100: '#f9eee9',
+              200: '#f4dacd',
+              300: '#e5b69f',
+              400: '#d5947a',
+              500: '#c5785c',
+              600: '#ad5f44',
+              700: '#8c4832',
+              800: '#6f3b2a',
+              900: '#4a251b',
+            },
+            sage: {
+              50: '#f6f7f5',
+              100: '#ebeee9',
+              200: '#d8ded3',
+              500: '#5c6957',
+              700: '#3e483b',
+              800: '#2b3329',
+              900: '#1d221c',
+            },
+            linen: '#FBF9F5',
+            warmdark: '#1C1A19',
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', '-apple-system', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #FBF9F5;
+      color: #1C1A19;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+    .font-serif-luxury {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+    }
+    .glass-card {
+      background: rgba(255, 255, 255, 0.88);
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      border: 1px solid rgba(213, 148, 122, 0.22);
+    }
+    .neuro-glow {
+      box-shadow: 0 0 25px -4px rgba(92, 105, 87, 0.25);
+    }
+    .tab-active {
+      background-color: #3e483b !important;
+      color: #ffffff !important;
+      border-color: #3e483b !important;
+    }
+  </style>
+</head>
+<body class="selection:bg-clay-200 selection:text-warmdark relative">
+
+  <!-- Top Value Banner -->
+  <div class="bg-warmdark text-clay-100 text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
+    <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+    <span><strong>Interactive AI Upgrade:</strong> Test the new Neuro-Inclusive Conversation & Dynamic Analyzer below</span>
+    <a href="#neuro-ai" class="underline ml-1 hover:text-white transition-colors">Try It Live &rarr;</a>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <header class="sticky top-0 z-40 bg-[#FBF9F5]/90 backdrop-blur-md border-b border-clay-200/60 transition-all">
+    <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+      <!-- Logo -->
+      <a href="#" class="flex flex-col">
+        <span class="font-serif-luxury text-2xl sm:text-3xl font-bold tracking-tight text-warmdark">Dr. Liz Jenkins</span>
+        <span class="text-[10px] sm:text-xs font-semibold tracking-widest uppercase text-clay-600">Ph.D., LMFT · Couple's Connection Coach</span>
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-warmdark/80">
+        <a href="#about" class="hover:text-clay-600 transition-colors">About Dr. Liz</a>
+        <a href="#method" class="hover:text-clay-600 transition-colors">The 3-Step Restart</a>
+        <a href="#neuro-ai" class="hover:text-clay-600 transition-colors flex items-center gap-1.5 text-sage-800 font-bold bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+          <i data-lucide="brain-circuit" class="w-4 h-4 text-sage-700"></i> Neurodivergent AI Suite
+        </a>
+        <a href="#ai-translator" class="hover:text-clay-600 transition-colors flex items-center gap-1.5 text-clay-700 font-semibold">
+          <i data-lucide="sparkles" class="w-4 h-4 text-clay-500"></i> De-escalation Tool
+        </a>
+        <a href="#clarity-pulse" class="hover:text-clay-600 transition-colors flex items-center gap-1.5">
+          <i data-lucide="activity" class="w-4 h-4 text-clay-500"></i> 60s Quiz
+        </a>
+        <a href="#book" class="hover:text-clay-600 transition-colors">The Book</a>
+      </nav>
+
+      <!-- CTA Button -->
+      <div class="flex items-center gap-3">
+        <button onclick="openModal('cheatSheetModal')" class="hidden sm:inline-flex text-xs font-semibold uppercase tracking-wider text-clay-700 hover:text-clay-900 px-3 py-2">
+          Free Cheat Sheet
+        </button>
+        <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white text-xs sm:text-sm font-semibold px-5 py-2.5 rounded-full shadow-sm hover:shadow-md transition-all flex items-center gap-2">
+          <span>Book Free Consult</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative pt-12 pb-20 lg:pt-20 lg:pb-28 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Hero Copy -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-clay-100 border border-clay-200/80 px-4 py-1.5 rounded-full text-xs font-semibold text-clay-800">
+          <i data-lucide="award" class="w-3.5 h-3.5 text-clay-600"></i>
+          <span>38+ Years Clinical Experience · 75,000+ Couple Hours</span>
+        </div>
+
+        <h1 class="font-serif-luxury text-4xl sm:text-5xl lg:text-6xl font-bold text-warmdark leading-[1.12] tracking-tight">
+          You’re not broken.<br>
+          <span class="italic text-clay-600 font-normal">You’re just out of sync.</span>
+        </h1>
+
+        <p class="text-base sm:text-lg text-warmdark/75 leading-relaxed max-w-xl">
+          Tired of feeling like roommates walking on eggshells? Whether you're navigating classic communication hurdles or neurodivergent relationship dynamics (ADHD, Autism, Sensory Overload & RSD), Dr. Liz Jenkins bridges the gap into deep passion, mutual understanding, and lasting connection.
+        </p>
+
+        <!-- CTA Row -->
+        <div class="pt-2 flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+          <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white font-semibold px-7 py-3.5 rounded-full shadow-lg hover:shadow-xl transition-all flex items-center justify-center gap-2 text-sm sm:text-base">
+            <span>Book Your Free Strategy Consult</span>
+            <i data-lucide="calendar" class="w-4 h-4"></i>
+          </button>
+          
+          <a href="#neuro-ai" class="bg-white hover:bg-sage-50 border border-sage-300 text-warmdark font-medium px-6 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-sm sm:text-base">
+            <i data-lucide="brain-circuit" class="w-4 h-4 text-sage-700"></i>
+            <span>Test Neurodivergent AI Tool</span>
+          </a>
+        </div>
+
+        <!-- Social Proof Stats -->
+        <div class="pt-8 grid grid-cols-3 gap-6 border-t border-clay-200/80">
+          <div>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">38+</div>
+            <div class="text-xs text-warmdark/60 font-medium">Years As LMFT & Coach</div>
+          </div>
+          <div>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">36 Yrs</div>
+            <div class="text-xs text-warmdark/60 font-medium">Personal Happy Marriage</div>
+          </div>
+          <div>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">Neuro-Aware</div>
+            <div class="text-xs text-warmdark/60 font-medium">ADHD & ASD Inclusive</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card with Interactive Voice Note -->
+      <div class="lg:col-span-5 relative">
+        <div class="relative mx-auto max-w-md">
+          <!-- Ambient Glow Backdrop -->
+          <div class="absolute -inset-4 bg-gradient-to-tr from-clay-300/40 to-sage-200/50 rounded-3xl blur-2xl -z-10"></div>
+          
+          <div class="bg-white rounded-3xl overflow-hidden shadow-2xl border border-clay-200/80">
+            <!-- Image with authentic photo -->
+            <div class="relative h-80 sm:h-96 w-full overflow-hidden bg-clay-100">
+              <img 
+                src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/P3FTj8SotsPVi8PEcSJK/media/74cdb220-1b74-4b35-81c4-5269269d7cc8.png" 
+                alt="Dr. Liz Jenkins" 
+                class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700"
+              />
+              <div class="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+              
+              <div class="absolute bottom-4 left-4 right-4 text-white">
+                <span class="text-xs uppercase tracking-widest font-semibold text-clay-200">Meet Your Coach</span>
+                <h3 class="font-serif-luxury text-2xl font-bold">Dr. Liz Jenkins, Ph.D., LMFT</h3>
+                <p class="text-xs text-white/80">Austin & Pflugerville, TX · Worldwide Virtual Coaching</p>
+              </div>
+            </div>
+
+            <!-- Interactive Welcome Audio Snippet -->
+            <div class="p-5 bg-clay-50/70 border-t border-clay-200/60">
+              <div class="flex items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
+                  <button id="voicePlayBtn" onclick="toggleAudioPreview()" class="w-11 h-11 rounded-full bg-clay-600 hover:bg-clay-700 text-white flex items-center justify-center shadow-md transition-all">
+                    <i id="audioIcon" data-lucide="play" class="w-5 h-5 ml-0.5"></i>
+                  </button>
+                  <div>
+                    <div class="text-xs font-bold text-warmdark flex items-center gap-1.5">
+                      <span>A Personal Welcome From Dr. Liz</span>
+                      <span class="inline-block w-1.5 h-1.5 rounded-full bg-clay-500"></span>
+                    </div>
+                    <div class="text-[11px] text-warmdark/60" id="audioStatusText">Listen to a 45-second message for struggling couples</div>
+                  </div>
+                </div>
+                <span class="text-xs font-mono font-semibold text-clay-700 bg-clay-200/60 px-2 py-1 rounded">0:45</span>
+              </div>
+
+              <!-- Animated Soundwave Simulator -->
+              <div id="audioWaveform" class="mt-3 flex items-center gap-1 h-3 opacity-40">
+                <span class="h-1.5 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-3 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-2 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-3 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-1.5 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-2.5 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-1.5 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-3 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-2 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+                <span class="h-1 w-1 bg-clay-600 rounded-full transition-all duration-300"></span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Floating Badge -->
+          <div class="absolute -bottom-5 -left-4 glass-card px-4 py-3 rounded-2xl shadow-xl flex items-center gap-3 border border-clay-200">
+            <div class="w-10 h-10 rounded-full bg-emerald-100 flex items-center justify-center text-emerald-700">
+              <i data-lucide="heart-handshake" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <div class="text-xs font-bold text-warmdark">"Reconnected in 1 Session"</div>
+              <div class="text-[10px] text-warmdark/60">Verified Client Review — Tiana S.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======================================================== -->
+  <!-- SPECIAL HIGHLIGHT: NEURODIVERGENT AI CONVERSATION & PERSONALITY ANALYZER -->
+  <!-- ======================================================== -->
+  <section id="neuro-ai" class="py-20 bg-gradient-to-b from-[#f3f6f2] via-white to-clay-50/50 border-y border-sage-200">
+    <div class="max-w-6xl mx-auto px-6">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+        <div class="inline-flex items-center gap-2 bg-sage-200 text-sage-900 text-xs font-bold px-4 py-1.5 rounded-full tracking-wider uppercase">
+          <i data-lucide="brain" class="w-4 h-4 text-sage-700"></i>
+          Neuro-Inclusive Relationship Intelligence
+        </div>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
+          Decode ADHD, Autism & Neurodivergent Communication Loops
+        </h2>
+        <p class="text-sm sm:text-base text-warmdark/75">
+          Standard marriage advice often backfires with neurodivergent couples. When one or both partners have ADHD, Autism, Sensory Sensitivities, or Rejection Sensitive Dysphoria (RSD), everyday misunderstandings feel like betrayal. 
+          Use Dr. Liz’s AI tool below to translate conflict through a compassionate neuro-affirming lens.
+        </p>
+      </div>
+
+      <!-- Main Neuro Tool Card -->
+      <div class="bg-white rounded-3xl shadow-xl border border-sage-200 overflow-hidden">
+        
+        <!-- Profile / Dynamic Selector Bar -->
+        <div class="p-4 sm:p-6 bg-sage-50/80 border-b border-sage-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
+          <div class="flex items-center gap-2">
+            <i data-lucide="git-branch" class="w-4 h-4 text-sage-700"></i>
+            <span class="text-xs font-bold uppercase tracking-wider text-warmdark">Select Your Couple Dynamic:</span>
+          </div>
+          <div class="flex flex-wrap items-center gap-2" id="neuroDynamicChips">
+            <button onclick="setNeuroDynamic('adhd-nt')" id="chip-adhd-nt" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100 tab-active">
+              ADHD + Neurotypical
+            </button>
+            <button onclick="setNeuroDynamic('asd-nt')" id="chip-asd-nt" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
+              Autistic / Flat-Affect + Expressive Partner
+            </button>
+            <button onclick="setNeuroDynamic('rsd')" id="chip-rsd" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
+              Rejection Sensitivity (RSD) Trigger
+            </button>
+            <button onclick="setNeuroDynamic('double-nd')" id="chip-double-nd" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
+              Double Neurodivergent (ADHD + ASD)
+            </button>
+          </div>
+        </div>
+
+        <!-- Analyzer Grid -->
+        <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-sage-200">
+          
+          <!-- Left: Conflict Snippet & Context Input (5 cols) -->
+          <div class="lg:col-span-5 p-6 sm:p-8 space-y-5 bg-white flex flex-col justify-between">
+            <div class="space-y-4">
+              <div class="flex items-center justify-between">
+                <label class="text-xs font-bold uppercase tracking-wider text-warmdark flex items-center gap-1.5">
+                  <i data-lucide="message-square-warning" class="w-4 h-4 text-amber-600"></i> The Conflict / Conversation
+                </label>
+                <span class="text-[10px] text-warmdark/50" id="neuroScenarioBadge">Preset: Task Paralysis</span>
+              </div>
+
+              <!-- Quick Scenarios -->
+              <div class="flex flex-col gap-1.5">
+                <span class="text-[11px] font-semibold text-warmdark/60">Common Real-World Examples:</span>
+                <button onclick="loadNeuroScenario(0)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
+                  "You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders."
+                </button>
+                <button onclick="loadNeuroScenario(1)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
+                  "I was crying and pouring my heart out, and you just stared at me blankly like a robot!"
+                </button>
+                <button onclick="loadNeuroScenario(2)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
+                  "I asked for 20 minutes of quiet when I walked in, and you blew up saying I don't love you."
+                </button>
+              </div>
+
+              <div>
+                <label class="text-[11px] font-semibold text-warmdark/70 block mb-1">Custom Conflict Words:</label>
+                <textarea 
+                  id="neuroRawText" 
+                  rows="3" 
+                  class="w-full text-xs sm:text-sm p-3.5 rounded-xl border border-sage-300 focus:border-sage-600 focus:ring-2 focus:ring-sage-200 outline-none resize-none transition-all"
+                  placeholder="Paste what you or your partner said during the misunderstanding..."
+                >You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders.</textarea>
+              </div>
+            </div>
+
+            <div class="pt-3">
+              <button 
+                onclick="runNeuroAnalysis()" 
+                id="runNeuroBtn"
+                class="w-full bg-sage-700 hover:bg-sage-800 text-white font-semibold py-3 px-5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
+              >
+                <i data-lucide="brain-circuit" class="w-4 h-4"></i>
+                <span>Analyze Neurodivergent Disconnect</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: 3-Lens AI Breakdown (7 cols) -->
+          <div class="lg:col-span-7 p-6 sm:p-8 bg-sage-50/30 space-y-5 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-4">
+                <span class="text-xs font-bold uppercase tracking-wider text-sage-900 flex items-center gap-1.5">
+                  <i data-lucide="layers" class="w-4 h-4 text-sage-700"></i> The Clinical Neuro-Inclusive Breakdown
+                </span>
+                <span class="text-[10px] bg-sage-200 text-sage-800 font-bold px-2.5 py-0.5 rounded-full">
+                  Empathy + Brain Chemistry
+                </span>
+              </div>
+
+              <!-- Loading Indicator -->
+              <div id="neuroLoading" class="hidden py-12 text-center space-y-2">
+                <i data-lucide="loader" class="w-7 h-7 text-sage-600 animate-spin mx-auto"></i>
+                <div class="text-xs text-warmdark/60 font-medium">Decoding working memory, sensory regulation, and emotional impact...</div>
+              </div>
+
+              <!-- Analysis Results -->
+              <div id="neuroResultCards" class="space-y-3.5">
+                
+                <!-- Lens 1: The Neurodivergent Brain Reality -->
+                <div class="p-4 bg-white rounded-2xl border border-sage-200 shadow-sm space-y-1.5">
+                  <div class="flex items-center gap-2 text-xs font-bold text-sage-800">
+                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+                    <span>1. What’s Happening In The Neurodivergent Brain (ADHD / Executive Deficit)</span>
+                  </div>
+                  <p id="neuroBrainReality" class="text-xs text-warmdark/80 leading-relaxed pl-4">
+                    This is <strong>executive dysfunction & working memory drop</strong>, not lack of love. To an ADHD brain, tasks without immediate dopamine urgency vanish the moment attention shifts. Calling this 'lack of love' sends the ADHD brain into shame and defensive paralysis.
+                  </p>
+                </div>
+
+                <!-- Lens 2: The Partner's Emotional Impact -->
+                <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm space-y-1.5">
+                  <div class="flex items-center gap-2 text-xs font-bold text-amber-800">
+                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
+                    <span>2. The Partner’s Legitimate Feeling (Parent-Child Dynamic Risk)</span>
+                  </div>
+                  <p id="neuroPartnerImpact" class="text-xs text-warmdark/80 leading-relaxed pl-4">
+                    The partner experiences repeated cognitive overload and feels like an unappreciated parent rather than an equal partner.
+                  </p>
+                </div>
+
+                <!-- Lens 3: The Dr. Liz Bridge Script -->
+                <div class="p-4 bg-white rounded-2xl border-2 border-clay-300 shadow-sm space-y-2">
+                  <div class="flex items-center justify-between">
+                    <div class="flex items-center gap-2 text-xs font-bold text-clay-700">
+                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-clay-600"></i>
+                      <span>3. Dr. Liz’s "Neuro-Bridge" Reconnect Script</span>
+                    </div>
+                    <span class="text-[10px] text-clay-600 font-semibold bg-clay-100 px-2 py-0.5 rounded">Say This Instead</span>
+                  </div>
+                  <p id="neuroBridgeScript" class="text-xs sm:text-sm font-serif-luxury font-semibold text-warmdark italic leading-relaxed pl-4">
+                    "I know you love me and didn't forget on purpose, but when this task dropped, it made me feel alone with the house stress. Can we sit down right now for 2 minutes and make the call together so you don't have to carry it alone?"
+                  </p>
+                </div>
+
+              </div>
+            </div>
+
+            <!-- Action Footer -->
+            <div class="pt-4 border-t border-sage-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
+              <span class="text-warmdark/70">Need dedicated neuro-affirming coaching for your relationship?</span>
+              <button onclick="openModal('consultModal')" class="bg-sage-800 hover:bg-black text-white font-semibold px-4 py-2 rounded-full transition-colors flex items-center gap-1.5">
+                <span>Book Neuro-Inclusive Consult</span>
+                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive AI Feature #1: The General De-escalation Communication Translator -->
+  <section id="ai-translator" class="py-20 bg-gradient-to-b from-white to-clay-100/60 border-b border-clay-200/80">
+    <div class="max-w-5xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <div class="inline-flex items-center gap-2 bg-clay-200/80 text-clay-800 text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
+          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-clay-600"></i>
+          General De-escalation Translator
+        </div>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
+          Turn Heated Words Into Heart Connection
+        </h2>
+        <p class="text-sm sm:text-base text-warmdark/70">
+          When we're hurt or exhausted, we speak in blame. Type what you feel like blurting out below, and Dr. Liz’s clinical framework will translate it into a vulnerable statement that pulls your partner close instead of pushing them away.
+        </p>
+      </div>
+
+      <!-- The Interactive Translator Widget -->
+      <div class="bg-white rounded-3xl shadow-xl border border-clay-200 overflow-hidden">
+        
+        <!-- Preset Prompt Chips -->
+        <div class="p-4 sm:p-5 bg-clay-50/80 border-b border-clay-200/60 flex flex-wrap items-center gap-2">
+          <span class="text-xs font-semibold text-warmdark/60 mr-1">Try common scenarios:</span>
+          <button onclick="setTranslatorPreset(0)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
+            "You never help around the house"
+          </button>
+          <button onclick="setTranslatorPreset(1)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
+            "You care more about your phone than me"
+          </button>
+          <button onclick="setTranslatorPreset(2)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
+            "Why do you always shut down?"
+          </button>
+        </div>
+
+        <!-- Input / Output Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-clay-200">
+          
+          <!-- Left: User's Frustrated Words -->
+          <div class="p-6 sm:p-8 space-y-4 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-2">
+                <label class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
+                  <i data-lucide="flame" class="w-4 h-4"></i> What You Feel Like Saying (The Hurt / Blame)
+                </label>
+                <span class="text-[11px] text-warmdark/40 font-mono" id="charCount">72 chars</span>
+              </div>
+              <textarea 
+                id="rawConflictInput" 
+                rows="4" 
+                class="w-full text-sm sm:text-base p-4 rounded-xl border border-clay-300 focus:border-clay-600 focus:ring-2 focus:ring-clay-200 outline-none resize-none transition-all"
+                placeholder="E.g. 'You always ignore me after work and it feels like I don't even matter to you!'"
+              >You always ignore me after work and it feels like I don't even matter to you!</textarea>
+            </div>
+
+            <div class="pt-2">
+              <button 
+                onclick="runDeescalationTranslation()" 
+                id="translateBtn"
+                class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3 px-5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
+              >
+                <i data-lucide="sparkles" class="w-4 h-4"></i>
+                <span>Translate with Dr. Liz’s Method</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Right: Dr. Liz's Clinical Reconnect Translation -->
+          <div class="p-6 sm:p-8 space-y-5 bg-clay-50/50 flex flex-col justify-between">
+            <div>
+              <div class="flex items-center justify-between mb-3">
+                <label class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
+                  <i data-lucide="heart" class="w-4 h-4"></i> Dr. Liz’s "Smart Restart" Reconnect Script
+                </label>
+                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Non-Violent & Vulnerable</span>
+              </div>
+
+              <!-- Loading spinner simulator -->
+              <div id="translateLoading" class="hidden py-8 text-center space-y-2">
+                <i data-lucide="loader-2" class="w-6 h-6 text-clay-600 animate-spin mx-auto"></i>
+                <div class="text-xs text-warmdark/60 font-medium">Applying Dr. Liz’s 38-year de-escalation psychology...</div>
+              </div>
+
+              <!-- Translation Output -->
+              <div id="translateResult" class="space-y-4">
+                <div class="p-4 bg-white rounded-xl border border-clay-200 shadow-sm relative">
+                  <i data-lucide="quote" class="w-5 h-5 text-clay-400 absolute top-3 right-3 opacity-40"></i>
+                  <p id="translatedQuote" class="text-warmdark font-medium text-sm sm:text-base italic leading-relaxed">
+                    "I’ve really missed you today and I crave some quiet connection with you. Could we take 15 minutes together after dinner to just be together without our screens?"
+                  </p>
+                </div>
+
+                <!-- Clinical Insight Breakdown -->
+                <div class="space-y-2 text-xs text-warmdark/80 bg-white/70 p-3.5 rounded-xl border border-clay-200/80">
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-clay-700 whitespace-nowrap">The Underlying Need:</span>
+                    <span id="underlyingNeed" class="text-warmdark/70">Longing for emotional safety, feeling seen and prioritized.</span>
+                  </div>
+                  <div class="flex items-start gap-2">
+                    <span class="font-bold text-emerald-700 whitespace-nowrap">Why It Works:</span>
+                    <span id="whyItWorks" class="text-warmdark/70">Replaces the trigger word "always" with vulnerable desire, removing partner defensiveness.</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Call to Action Mini Banner -->
+            <div class="pt-4 border-t border-clay-200/80 flex items-center justify-between text-xs">
+              <span class="text-warmdark/60">Need guidance on your specific relationship dynamic?</span>
+              <button onclick="openModal('consultModal')" class="font-bold text-clay-700 hover:text-clay-900 underline">
+                Ask Dr. Liz In A Free Call &rarr;
+              </button>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive AI Feature #3: The 60-Second Relationship Clarity Pulse -->
+  <section id="clarity-pulse" class="py-20 bg-[#FBF9F5]">
+    <div class="max-w-4xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+        <div class="inline-flex items-center gap-2 bg-sage-100 text-sage-800 text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
+          <i data-lucide="activity" class="w-3.5 h-3.5 text-sage-700"></i>
+          Interactive Relationship Health Checkup
+        </div>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
+          Where Is Your Relationship Right Now?
+        </h2>
+        <p class="text-sm sm:text-base text-warmdark/70">
+          Answer 4 simple questions to identify your couple’s current pattern and receive Dr. Liz’s recommended immediate step.
+        </p>
+      </div>
+
+      <!-- Quiz Card -->
+      <div class="bg-white rounded-3xl p-6 sm:p-10 shadow-xl border border-clay-200">
+        
+        <!-- Step Indicator -->
+        <div class="flex items-center justify-between mb-8 pb-4 border-b border-clay-200">
+          <div class="flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-clay-600 text-white text-xs font-bold flex items-center justify-center" id="quizStepNumber">1</span>
+            <span class="text-xs font-bold uppercase tracking-wider text-warmdark/70" id="quizStepTitle">Communication Rhythm</span>
+          </div>
+          <span class="text-xs font-medium text-warmdark/50" id="quizProgressText">Question 1 of 4</span>
+        </div>
+
+        <!-- Quiz Body (Active Question) -->
+        <div id="quizQuestionContainer" class="space-y-6">
+          <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-warmdark" id="quizQuestionText">
+            When you and your partner disagree, what typically happens?
+          </h3>
+
+          <div class="grid grid-cols-1 gap-3" id="quizOptionsList">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- Quiz Result Container (Hidden Initially) -->
+        <div id="quizResultContainer" class="hidden space-y-6">
+          <div class="p-6 bg-clay-50 rounded-2xl border border-clay-200 space-y-4">
+            <div class="inline-flex items-center gap-2 bg-clay-200 text-clay-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+              Your Primary Relationship Dynamic
+            </div>
+            <h3 class="font-serif-luxury text-3xl font-bold text-warmdark" id="resultPatternTitle">
+              The "Roommate Drift" Dynamic
+            </h3>
+            <p class="text-sm text-warmdark/75 leading-relaxed" id="resultPatternDesc">
+              You both still care deeply for each other, but logistics, work, and routines have crowded out passionate romance and deep emotional intimacy. You are running a home together, but feeling lonely in the same bed.
+            </p>
+            <div class="p-4 bg-white rounded-xl border border-clay-200/80 space-y-2">
+              <div class="text-xs font-bold text-clay-700 uppercase tracking-wider">Dr. Liz's Prescription:</div>
+              <p class="text-xs sm:text-sm text-warmdark/80" id="resultActionStep">
+                Start with Step 1 of the Smart Restart: <strong>"Repair & Reconnect Micro-Moments."</strong> You don't need a 2-hour conversation; you need 7-minute daily intentional habits.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex flex-col sm:flex-row items-center gap-4 pt-2">
+            <button onclick="openModal('consultModal')" class="w-full sm:w-auto bg-clay-600 hover:bg-clay-700 text-white font-semibold px-6 py-3.5 rounded-full shadow-md text-sm flex items-center justify-center gap-2">
+              <span>Book Strategy Call With Dr. Liz</span>
+              <i data-lucide="calendar" class="w-4 h-4"></i>
+            </button>
+            <button onclick="openModal('cheatSheetModal')" class="w-full sm:w-auto bg-white border border-clay-300 text-warmdark font-medium px-6 py-3.5 rounded-full text-sm hover:bg-clay-50">
+              Download Free 7-Step Cheat Sheet
+            </button>
+            <button onclick="resetQuiz()" class="text-xs text-warmdark/50 hover:text-warmdark underline ml-auto">
+              Retake Checkup
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The 3-Step Smart Restart Methodology -->
+  <section id="method" class="py-20 bg-warmdark text-white relative overflow-hidden">
+    <!-- Decorative background glow -->
+    <div class="absolute top-0 right-0 w-96 h-96 bg-clay-600/10 rounded-full blur-3xl"></div>
+    <div class="absolute bottom-0 left-0 w-96 h-96 bg-sage-500/10 rounded-full blur-3xl"></div>
+
+    <div class="max-w-7xl mx-auto px-6 relative z-10">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-semibold tracking-widest text-clay-400 uppercase">The Proven Clinical Methodology</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight">
+          The 3-Step "Smart Restart" Framework
+        </h2>
+        <p class="text-white/70 text-sm sm:text-base">
+          Rather than endless talk therapy rehashing the past, Dr. Liz’s action-oriented system shifts relationship dynamics quickly through three clear phases:
+        </p>
+      </div>
+
+      <!-- 3 Step Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Step 1: Repair -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-clay-500/20 text-clay-300 flex items-center justify-center font-serif-luxury text-2xl font-bold">
+              01
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white group-hover:text-clay-300 transition-colors">
+              Step 1: Repair
+            </h3>
+            <p class="text-white/70 text-sm leading-relaxed">
+              We gently uncover the emotional pieces of each partner's heart that need mending. We identify the negative conflict triggers, sensory overwhelm, and dismantle the recurring hurt patterns.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/10 mt-6 text-xs text-clay-300 font-semibold flex items-center gap-1">
+            <span>De-escalate & Stop Bleeding</span>
+            <i data-lucide="check" class="w-4 h-4 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- Step 2: Restore -->
+        <div class="bg-white/5 border border-clay-400/40 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group relative shadow-2xl">
+          <div class="absolute -top-3 right-6 bg-clay-500 text-white text-[10px] uppercase font-bold tracking-wider px-3 py-1 rounded-full">
+            Core Transformation
+          </div>
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-clay-500/20 text-clay-300 flex items-center justify-center font-serif-luxury text-2xl font-bold">
+              02
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white group-hover:text-clay-300 transition-colors">
+              Step 2: Restore
+            </h3>
+            <p class="text-white/70 text-sm leading-relaxed">
+              Rebuild emotional safety and authentic reliability. Set fresh, empowering expectations and learn your partner’s true brain wiring so love and trust can safely flourish again.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/10 mt-6 text-xs text-clay-300 font-semibold flex items-center gap-1">
+            <span>Rebuild Trust & Intimacy</span>
+            <i data-lucide="check" class="w-4 h-4 ml-auto"></i>
+          </div>
+        </div>
+
+        <!-- Step 3: Renew -->
+        <div class="bg-white/5 border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all flex flex-col justify-between group">
+          <div class="space-y-4">
+            <div class="w-12 h-12 rounded-2xl bg-clay-500/20 text-clay-300 flex items-center justify-center font-serif-luxury text-2xl font-bold">
+              03
+            </div>
+            <h3 class="font-serif-luxury text-2xl font-bold text-white group-hover:text-clay-300 transition-colors">
+              Step 3: Renew
+            </h3>
+            <p class="text-white/70 text-sm leading-relaxed">
+              Create a lasting rhythm of playful connection, passionate romance, and genuine friendship. Learn micro-habits to renew your mind and refresh your heart every single morning.
+            </p>
+          </div>
+          <div class="pt-6 border-t border-white/10 mt-6 text-xs text-clay-300 font-semibold flex items-center gap-1">
+            <span>Daily Legacy of Love</span>
+            <i data-lucide="check" class="w-4 h-4 ml-auto"></i>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Bottom Banner -->
+      <div class="mt-12 text-center">
+        <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg transition-all inline-flex items-center gap-2 text-sm sm:text-base">
+          <span>Schedule A Free Strategy Call To Review Your 3 Steps</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- About Dr. Liz Section -->
+  <section id="about" class="py-20 lg:py-28 bg-[#FBF9F5]">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Bio Image -->
+      <div class="lg:col-span-5 order-2 lg:order-1">
+        <div class="relative">
+          <div class="w-full aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl border border-clay-200">
+            <img 
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/P3FTj8SotsPVi8PEcSJK/media/1c8b91a2-c870-4454-969d-bb8b1a489eff.png" 
+              alt="Dr. Liz Jenkins Portrait" 
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <!-- Accolade Card -->
+          <div class="absolute -bottom-6 -right-6 glass-card p-5 rounded-2xl shadow-xl max-w-xs border border-clay-200">
+            <div class="flex items-center gap-2 text-clay-700 font-bold text-xs uppercase mb-1">
+              <i data-lucide="sparkle" class="w-4 h-4"></i> Real World Tested
+            </div>
+            <p class="text-xs text-warmdark/80">
+              "Dr. Liz doesn't just teach theory. She's been happily married for 36 years, raised two daughters, and has walked thousands of couples through crisis into thriving joy."
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bio Text -->
+      <div class="lg:col-span-7 order-1 lg:order-2 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-clay-100 text-clay-800 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+          Hello There · I'm Dr. Liz Jenkins
+        </div>
+
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark leading-tight">
+          My mission is to prevent one more unnecessary divorce or breakup.
+        </h2>
+
+        <div class="space-y-4 text-warmdark/80 text-sm sm:text-base leading-relaxed">
+          <p>
+            I believe that you and your partner can overcome any obstacle as long as love and commitment remain at the core. With over 38 years as a licensed marriage and family therapist (LMFT) and turned Connection Coach, I’ve seen couples on the brink of calling divorce attorneys completely turn things around in a matter of weeks.
+          </p>
+          <p>
+            When you learn relational tools that actually work—how to de-escalate without defensiveness, express vulnerable needs safely, and embrace each other's neurodivergent realities—your whole life changes. Not only do you get your partner back; you leave a lasting legacy of love that your children can see and feel.
+          </p>
+        </div>
+
+        <!-- Personal Quick Facts -->
+        <div class="pt-4 grid grid-cols-2 sm:grid-cols-4 gap-4 text-center">
+          <div class="p-4 bg-white rounded-2xl border border-clay-200/80 shadow-sm">
+            <i data-lucide="graduation-cap" class="w-5 h-5 text-clay-600 mx-auto mb-1"></i>
+            <div class="text-xs font-bold text-warmdark">Ph.D. / LMFT</div>
+            <div class="text-[10px] text-warmdark/60">Doctor of Psychology</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl border border-clay-200/80 shadow-sm">
+            <i data-lucide="heart" class="w-5 h-5 text-clay-600 mx-auto mb-1"></i>
+            <div class="text-xs font-bold text-warmdark">36-Yr Marriage</div>
+            <div class="text-[10px] text-warmdark/60">Thriving Partnership</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl border border-clay-200/80 shadow-sm">
+            <i data-lucide="waves" class="w-5 h-5 text-clay-600 mx-auto mb-1"></i>
+            <div class="text-xs font-bold text-warmdark">Surfer & Musician</div>
+            <div class="text-[10px] text-warmdark/60">Guitar & Animal Lover</div>
+          </div>
+          <div class="p-4 bg-white rounded-2xl border border-clay-200/80 shadow-sm">
+            <i data-lucide="globe" class="w-5 h-5 text-clay-600 mx-auto mb-1"></i>
+            <div class="text-xs font-bold text-warmdark">Global Clients</div>
+            <div class="text-[10px] text-warmdark/60">Virtual Coaching</div>
+          </div>
+        </div>
+
+        <div class="pt-4">
+          <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white font-semibold px-7 py-3 rounded-full text-sm shadow-md transition-all flex items-center gap-2">
+            <span>Work 1:1 With Dr. Liz</span>
+            <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The Book Showcase Section -->
+  <section id="book" class="py-20 bg-clay-100/50 border-y border-clay-200">
+    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Book Details -->
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 bg-clay-200 text-clay-800 text-xs font-bold px-3.5 py-1.5 rounded-full uppercase tracking-wider">
+          <i data-lucide="book-open" class="w-3.5 h-3.5 text-clay-600"></i> The Bestselling Book
+        </div>
+
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark leading-tight">
+          The Marriage Reset
+        </h2>
+        <p class="font-serif-luxury text-xl sm:text-2xl text-clay-700 italic">
+          5 Therapist-Proven Steps to Fix Your Marriage, Rebuild Trust, and Reignite Lasting Love
+        </p>
+
+        <p class="text-warmdark/80 text-sm sm:text-base leading-relaxed">
+          After nearly four decades and more than 75,000 hours in therapy sessions, Dr. Liz shares the exact step-by-step framework that repairs communication, heals unspoken resentment, and reignites romantic intimacy—without years of painful counseling.
+        </p>
+
+        <!-- What You Learn In The Book -->
+        <div class="space-y-3 pt-2">
+          <div class="flex items-start gap-3 text-xs sm:text-sm text-warmdark/80">
+            <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3 h-3"></i>
+            </div>
+            <span><strong>The Resentment Diffuser:</strong> How to clear past emotional baggage without rehashing arguments.</span>
+          </div>
+          <div class="flex items-start gap-3 text-xs sm:text-sm text-warmdark/80">
+            <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3 h-3"></i>
+            </div>
+            <span><strong>The Intimacy Catalyst:</strong> Rekindle physical and emotional affection when you feel like roommates.</span>
+          </div>
+          <div class="flex items-start gap-3 text-xs sm:text-sm text-warmdark/80">
+            <div class="w-5 h-5 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center shrink-0 mt-0.5">
+              <i data-lucide="check" class="w-3 h-3"></i>
+            </div>
+            <span><strong>The Solo Reconnector:</strong> What to do when your partner isn't on board or refuses therapy.</span>
+          </div>
+        </div>
+
+        <!-- Book Action Buttons -->
+        <div class="pt-4 flex flex-wrap items-center gap-4">
+          <a href="https://www.amazon.com" target="_blank" class="bg-warmdark hover:bg-black text-white font-semibold px-6 py-3.5 rounded-full text-sm shadow-md flex items-center gap-2 transition-all">
+            <i data-lucide="shopping-bag" class="w-4 h-4 text-amber-400"></i>
+            <span>Buy On Amazon Now</span>
+          </a>
+          <button onclick="openModal('sampleChapterModal')" class="bg-white hover:bg-clay-50 border border-clay-300 text-warmdark font-medium px-5 py-3.5 rounded-full text-sm transition-all flex items-center gap-2">
+            <i data-lucide="file-text" class="w-4 h-4 text-clay-600"></i>
+            <span>Read Chapter 1 Excerpt Free</span>
+          </button>
+        </div>
+
+      </div>
+
+      <!-- Book Visual Cover -->
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="relative group cursor-pointer" onclick="openModal('sampleChapterModal')">
+          <div class="absolute -inset-4 bg-clay-400/20 rounded-3xl blur-2xl group-hover:bg-clay-400/35 transition-all"></div>
+          <div class="relative max-w-xs sm:max-w-sm rounded-2xl overflow-hidden shadow-2xl border border-clay-300 transform group-hover:-translate-y-2 transition-all duration-300">
+            <img 
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/P3FTj8SotsPVi8PEcSJK/media/693dad4cab2594767bb67977.png" 
+              alt="The Marriage Reset Book Cover" 
+              class="w-full h-auto"
+            />
+            <div class="absolute bottom-3 left-3 right-3 bg-white/95 backdrop-blur-sm p-3 rounded-xl border border-clay-200 text-center shadow-lg">
+              <span class="text-xs font-bold text-clay-700 flex items-center justify-center gap-1">
+                <i data-lucide="eye" class="w-3.5 h-3.5"></i> Click to preview Chapter 1
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Programs & Pathways Section -->
+  <section id="coaching" class="py-20 bg-[#FBF9F5]">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-4 mb-16">
+        <span class="text-xs font-semibold tracking-widest text-clay-600 uppercase">Ways To Work With Dr. Liz</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
+          Choose Your Path To Reconnection
+        </h2>
+        <p class="text-warmdark/70 text-sm sm:text-base">
+          Whether you want high-touch 1:1 guidance or self-paced toolkits, Dr. Liz has a structured pathway for your situation:
+        </p>
+      </div>
+
+      <!-- 3 Tier Cards -->
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-stretch">
+        
+        <!-- Tier 1: Free Starter -->
+        <div class="bg-white rounded-3xl p-8 border border-clay-200/80 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-warmdark/50 uppercase tracking-wider">Self-Paced Starter</span>
+            <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Connection Cheat Sheet</h3>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">Free</div>
+            <p class="text-xs text-warmdark/70 leading-relaxed">
+              Dr. Liz’s most popular 7-step guide to immediately stop arguments in their tracks and create intimacy this week.
+            </p>
+            <ul class="space-y-2.5 text-xs text-warmdark/80 pt-4 border-t border-clay-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Instant PDF Download</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 7 Proven Reconnection Prompts</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Daily Micro-Reset Habits</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openModal('cheatSheetModal')" class="w-full bg-clay-100 hover:bg-clay-200 text-clay-800 font-semibold py-3 rounded-full text-xs transition-colors">
+              Get Instant Access
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 2: VIP Accelerator (Highlighted) -->
+        <div class="bg-white rounded-3xl p-8 border-2 border-clay-500 shadow-xl flex flex-col justify-between relative">
+          <div class="absolute -top-3.5 left-1/2 -translate-x-1/2 bg-clay-600 text-white text-[10px] font-bold uppercase tracking-wider px-4 py-1 rounded-full shadow-md">
+            Most Popular & Transformative
+          </div>
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-clay-600 uppercase tracking-wider">Fast-Track 1:1 & Couples</span>
+            <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Smart Restart VIP Coaching</h3>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">By Application</div>
+            <p class="text-xs text-warmdark/70 leading-relaxed">
+              Intensive, personalized private coaching with Dr. Liz. Includes weekly deep-dive strategy calls and direct text access.
+            </p>
+            <ul class="space-y-2.5 text-xs text-warmdark/80 pt-4 border-t border-clay-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 1:1 or Couple Live Coaching Calls</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Direct Private Text Support With Dr. Liz</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Neuro-Affirming De-escalation & Rebuild</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Lifetime Access to All Audio Courses</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openModal('consultModal')" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3 rounded-full text-xs shadow-md transition-colors flex items-center justify-center gap-1.5">
+              <span>Apply For VIP Consult</span>
+              <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+            </button>
+          </div>
+        </div>
+
+        <!-- Tier 3: Book & Study Course -->
+        <div class="bg-white rounded-3xl p-8 border border-clay-200/80 shadow-sm flex flex-col justify-between">
+          <div class="space-y-4">
+            <span class="text-xs font-bold text-warmdark/50 uppercase tracking-wider">Self-Guided Audio/Study</span>
+            <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">The Marriage Reset Masterclass</h3>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">Digital Program</div>
+            <p class="text-xs text-warmdark/70 leading-relaxed">
+              Complete video walkthrough of Dr. Liz’s 5-step method with printable worksheets and real couple scenario breakdowns.
+            </p>
+            <ul class="space-y-2.5 text-xs text-warmdark/80 pt-4 border-t border-clay-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 12 Video & Audio Modules</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> De-escalation Conversation Cheat Sheets</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Practice at Your Own Pace</li>
+            </ul>
+          </div>
+          <div class="pt-8">
+            <button onclick="openModal('consultModal')" class="w-full bg-clay-100 hover:bg-clay-200 text-clay-800 font-semibold py-3 rounded-full text-xs transition-colors">
+              Explore The Course
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Client Testimonials -->
+  <section class="py-20 bg-clay-100/40 border-t border-clay-200">
+    <div class="max-w-7xl mx-auto px-6">
+      
+      <div class="text-center max-w-xl mx-auto space-y-3 mb-12">
+        <span class="text-xs font-semibold tracking-widest text-clay-600 uppercase">Real Transformations</span>
+        <h2 class="font-serif-luxury text-3xl sm:text-4xl font-bold text-warmdark">
+          From Resentment & Silence To Joy
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-7 rounded-3xl border border-clay-200 shadow-sm space-y-4">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-warmdark/80 italic leading-relaxed">
+            "Dr. Liz helped us reconnect after just one session. We had been stuck in the same painful blame loop for over 3 years. Her ability to cut through the fog and give us simple words that actually worked was miraculous."
+          </p>
+          <div class="pt-2 border-t border-clay-100 flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-warmdark">Tiana S.</div>
+              <div class="text-[10px] text-warmdark/60">Married 8 Years</div>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-semibold">Verified Client</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl border border-clay-200 shadow-sm space-y-4">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-warmdark/80 italic leading-relaxed">
+            "My husband has severe adult ADHD and I am neurotypical. We were heading straight for divorce because every forgotten task felt like disrespect. Dr. Liz showed us how ADHD affects executive function and gave us an exact script. We are in love again."
+          </p>
+          <div class="pt-2 border-t border-clay-100 flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-warmdark">Sarah & Marcus M.</div>
+              <div class="text-[10px] text-warmdark/60">Married 14 Years</div>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-semibold">Verified Client</span>
+          </div>
+        </div>
+
+        <div class="bg-white p-7 rounded-3xl border border-clay-200 shadow-sm space-y-4">
+          <div class="flex text-amber-400 gap-1 text-sm">
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+          </div>
+          <p class="text-xs sm:text-sm text-warmdark/80 italic leading-relaxed">
+            "The Smart Restart framework gave us tangible homework instead of just talking about our childhoods. We learned how to repair after a fight within 10 minutes instead of brooding for three days."
+          </p>
+          <div class="pt-2 border-t border-clay-100 flex items-center justify-between">
+            <div>
+              <div class="text-xs font-bold text-warmdark">David & Elena R.</div>
+              <div class="text-[10px] text-warmdark/60">Austin, Texas</div>
+            </div>
+            <span class="text-[10px] bg-emerald-50 text-emerald-700 px-2 py-0.5 rounded-full font-semibold">Verified Client</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Final Call to Action -->
+  <section class="py-20 bg-warmdark text-white text-center relative overflow-hidden">
+    <div class="max-w-4xl mx-auto px-6 relative z-10 space-y-6">
+      <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold">
+        Your dream relationship is waiting for you.
+      </h2>
+      <p class="text-white/70 max-w-xl mx-auto text-sm sm:text-base leading-relaxed">
+        Don’t let another month slip by in quiet disconnection. Book a free, confidential strategy consultation with Dr. Liz to see if the Smart Restart is the right fit for you and your partner.
+      </p>
+      <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+        <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white font-semibold px-8 py-4 rounded-full shadow-lg text-sm sm:text-base flex items-center gap-2">
+          <span>Book Your Free Discovery Call</span>
+          <i data-lucide="calendar" class="w-4 h-4"></i>
+        </button>
+        <button onclick="openModal('cheatSheetModal')" class="bg-white/10 hover:bg-white/20 text-white font-medium px-6 py-4 rounded-full text-sm sm:text-base border border-white/20">
+          Get Free Connection Cheat Sheet
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-[#151413] text-white/60 py-12 border-t border-white/10 text-xs">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row items-center justify-between gap-6">
+      <div>
+        <div class="font-serif-luxury text-xl font-bold text-white mb-1">Dr. Liz Jenkins</div>
+        <div>Licensed Marriage & Family Therapist · Relationship Connection Coach</div>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#about" class="hover:text-white transition-colors">About</a>
+        <a href="#neuro-ai" class="hover:text-white transition-colors">Neurodivergent AI</a>
+        <a href="#method" class="hover:text-white transition-colors">Method</a>
+        <a href="#book" class="hover:text-white transition-colors">The Book</a>
+        <a href="#coaching" class="hover:text-white transition-colors">VIP Coaching</a>
+        <a href="#" onclick="openModal('consultModal'); return false;" class="text-clay-400 hover:text-white transition-colors">Book Consult</a>
+      </div>
+      <div class="text-center md:text-right">
+        <div>&copy; 2026 Dr. Liz Jenkins. All Rights Reserved.</div>
+        <div class="text-[10px] text-white/40 mt-1">Austin & Pflugerville, TX · Worldwide Virtual Practice</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- FLOATING AI ASSISTANT: Dr. Liz's 24/7 Connection Concierge -->
+  <div class="fixed bottom-6 right-6 z-50">
+    <!-- Chat Trigger Pill -->
+    <button 
+      id="chatToggleBtn" 
+      onclick="toggleChatWidget()" 
+      class="bg-clay-600 hover:bg-clay-700 text-white p-3.5 sm:px-5 sm:py-3.5 rounded-full shadow-2xl flex items-center gap-3 border border-clay-400 transition-all hover:scale-105 group"
+    >
+      <div class="relative">
+        <i data-lucide="sparkles" class="w-5 h-5 text-amber-200"></i>
+        <span class="absolute -top-1 -right-1 w-2.5 h-2.5 rounded-full bg-emerald-400 border-2 border-clay-700"></span>
+      </div>
+      <span class="hidden sm:inline font-semibold text-xs tracking-wide">Ask Dr. Liz's AI Concierge</span>
+    </button>
+
+    <!-- Chat Window Container -->
+    <div 
+      id="chatWindow" 
+      class="hidden absolute bottom-16 right-0 w-[92vw] sm:w-96 max-h-[550px] bg-white rounded-3xl shadow-2xl border border-clay-300 flex flex-col overflow-hidden transition-all duration-300"
+    >
+      <!-- Chat Header -->
+      <div class="bg-warmdark p-4 text-white flex items-center justify-between">
+        <div class="flex items-center gap-3">
+          <div class="relative w-9 h-9 rounded-full overflow-hidden bg-clay-200 border border-white/20">
+            <img 
+              src="https://images.leadconnectorhq.com/image/f_webp/q_80/r_1200/u_https://assets.cdn.filesafe.space/P3FTj8SotsPVi8PEcSJK/media/74cdb220-1b74-4b35-81c4-5269269d7cc8.png" 
+              alt="Dr. Liz" 
+              class="w-full h-full object-cover object-top"
+            />
+          </div>
+          <div>
+            <div class="text-xs font-bold flex items-center gap-1.5">
+              <span>Dr. Liz AI Connection Concierge</span>
+              <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>
+            </div>
+            <div class="text-[10px] text-white/60">38 Yrs Clinical & Neuro-Inclusive Wisdom</div>
+          </div>
+        </div>
+        <button onclick="toggleChatWidget()" class="text-white/60 hover:text-white">
+          <i data-lucide="x" class="w-5 h-5"></i>
+        </button>
+      </div>
+
+      <!-- Ethical Therapy Guardrail Notice -->
+      <div class="bg-amber-50 px-3 py-1.5 border-b border-amber-200 text-[10px] text-amber-800 flex items-center gap-1.5">
+        <i data-lucide="info" class="w-3.5 h-3.5 text-amber-600 shrink-0"></i>
+        <span>AI Educational Assistant · For emergencies or medical advice call 988.</span>
+      </div>
+
+      <!-- Messages Stream -->
+      <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 max-h-80 text-xs">
+        <div class="flex items-start gap-2">
+          <div class="w-6 h-6 rounded-full bg-clay-200 text-clay-800 flex items-center justify-center font-bold text-[10px] shrink-0">L</div>
+          <div class="bg-clay-100/80 p-3 rounded-2xl rounded-tl-none text-warmdark/90 leading-relaxed max-w-[85%]">
+            Hello! I’m Dr. Liz’s AI Connection Concierge. Are you looking to improve communication, navigate neurodivergent dynamics (like ADHD or Autism in marriage), or learn about coaching?
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Suggested Questions -->
+      <div class="p-2 bg-clay-50 border-t border-clay-200/80 flex flex-wrap gap-1.5">
+        <button onclick="sendQuickMessage('How does ADHD affect marriage?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
+          How ADHD affects marriage?
+        </button>
+        <button onclick="sendQuickMessage('My partner won\'t do therapy, what can I do?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
+          Partner won't do therapy?
+        </button>
+        <button onclick="sendQuickMessage('How do I book a free consult?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
+          Book free consult
+        </button>
+      </div>
+
+      <!-- Chat Input Field -->
+      <div class="p-3 bg-white border-t border-clay-200 flex items-center gap-2">
+        <input 
+          id="chatInput" 
+          type="text" 
+          placeholder="Ask a question about Dr. Liz's methods..." 
+          class="flex-1 text-xs p-2.5 rounded-full border border-clay-300 focus:outline-none focus:border-clay-600"
+          onkeydown="if(event.key === 'Enter') sendChatMessage()"
+        />
+        <button onclick="sendChatMessage()" class="w-8 h-8 rounded-full bg-clay-600 text-white flex items-center justify-center hover:bg-clay-700">
+          <i data-lucide="send" class="w-3.5 h-3.5 ml-0.5"></i>
+        </button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- MODAL: Book Free Strategy Consult -->
+  <div id="consultModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-lg w-full p-6 sm:p-8 shadow-2xl border border-clay-200 relative animate-in fade-in zoom-in-95 duration-200">
+      <button onclick="closeModal('consultModal')" class="absolute top-5 right-5 text-warmdark/50 hover:text-warmdark">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center space-y-2 mb-6">
+        <span class="text-xs font-bold text-clay-600 uppercase tracking-wider">Confidential & 100% Free</span>
+        <h3 class="font-serif-luxury text-3xl font-bold text-warmdark">Book Your Reconnection Strategy Call</h3>
+        <p class="text-xs sm:text-sm text-warmdark/70">
+          Speak directly with Dr. Liz Jenkins to determine the fastest path forward for your relationship.
+        </p>
+      </div>
+
+      <form id="consultForm" onsubmit="handleConsultSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">Your Full Name</label>
+          <input type="text" required placeholder="Jane Doe" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
+        </div>
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">Your Email</label>
+          <input type="email" required placeholder="jane@example.com" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
+        </div>
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">Phone Number (For Calendar Reminder)</label>
+          <input type="tel" required placeholder="(555) 123-4567" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
+        </div>
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">What is your biggest current relationship struggle?</label>
+          <select class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none bg-white">
+            <option>Neurodivergent communication (ADHD / Autism / Sensory)</option>
+            <option>We feel like roommates / lost the spark</option>
+            <option>Frequent bickering & recurring arguments</option>
+            <option>Rebuilding trust after betrayal / crisis</option>
+            <option>My partner is emotionally withdrawn / shutting down</option>
+          </select>
+        </div>
+        <button type="submit" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3.5 rounded-xl shadow-md text-sm transition-all flex items-center justify-center gap-2">
+          <span>Confirm & Pick Time on Calendar</span>
+          <i data-lucide="check" class="w-4 h-4"></i>
+        </button>
+      </form>
+      <div id="consultSuccessMsg" class="hidden text-center py-6 space-y-2">
+        <div class="w-12 h-12 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center mx-auto">
+          <i data-lucide="check-circle" class="w-6 h-6"></i>
+        </div>
+        <h4 class="font-serif-luxury text-2xl font-bold text-warmdark">Consultation Request Received!</h4>
+        <p class="text-xs text-warmdark/70">Dr. Liz's office will send you an instant calendar invite and Zoom details.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Free Cheat Sheet Download -->
+  <div id="cheatSheetModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-md w-full p-6 sm:p-8 shadow-2xl border border-clay-200 relative">
+      <button onclick="closeModal('cheatSheetModal')" class="absolute top-5 right-5 text-warmdark/50 hover:text-warmdark">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="text-center space-y-2 mb-6">
+        <div class="w-10 h-10 rounded-full bg-clay-100 text-clay-700 flex items-center justify-center mx-auto mb-2">
+          <i data-lucide="download" class="w-5 h-5"></i>
+        </div>
+        <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-warmdark">Free Reconnect Cheat Sheet</h3>
+        <p class="text-xs text-warmdark/70">
+          7 therapist-proven ways you and your partner can reconnect this week. Instant PDF download.
+        </p>
+      </div>
+
+      <form id="cheatSheetForm" onsubmit="handleCheatSheetSubmit(event)" class="space-y-4 text-xs sm:text-sm">
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">First Name</label>
+          <input type="text" required placeholder="Your first name" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
+        </div>
+        <div>
+          <label class="block font-semibold text-warmdark mb-1">Email Address</label>
+          <input type="email" required placeholder="Where should we send your PDF?" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
+        </div>
+        <button type="submit" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3.5 rounded-xl shadow-md text-sm transition-all">
+          Send Me The Cheat Sheet (Free)
+        </button>
+      </form>
+      <div id="cheatSheetSuccess" class="hidden text-center py-6 space-y-2">
+        <i data-lucide="check" class="w-8 h-8 text-emerald-600 mx-auto"></i>
+        <h4 class="font-serif-luxury text-xl font-bold text-warmdark">Check Your Inbox!</h4>
+        <p class="text-xs text-warmdark/70">Your 7-Step Reconnect Cheat Sheet is on its way.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- MODAL: Chapter 1 Excerpt -->
+  <div id="sampleChapterModal" class="fixed inset-0 z-50 bg-black/60 backdrop-blur-sm hidden flex items-center justify-center p-4">
+    <div class="bg-white rounded-3xl max-w-2xl w-full p-6 sm:p-8 shadow-2xl border border-clay-200 relative max-h-[85vh] flex flex-col">
+      <button onclick="closeModal('sampleChapterModal')" class="absolute top-5 right-5 text-warmdark/50 hover:text-warmdark">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="border-b border-clay-200 pb-4 mb-4">
+        <span class="text-xs font-bold text-clay-600 uppercase tracking-wider">Book Excerpt</span>
+        <h3 class="font-serif-luxury text-2xl sm:text-3xl font-bold text-warmdark">The Marriage Reset — Chapter 1</h3>
+        <p class="text-xs text-warmdark/60 font-serif-luxury italic">"You’re Not Broken. You’re Just Out of Sync."</p>
+      </div>
+
+      <div class="overflow-y-auto space-y-4 text-xs sm:text-sm text-warmdark/80 leading-relaxed pr-2 font-serif text-base">
+        <p>
+          "I have sat across from thousands of couples over thirty-eight years. Couples who arrived in silence, clutching their coffee cups like shields, convinced that the love they once felt had died quietly in its sleep.
+        </p>
+        <p>
+          Here is what I tell them on day one: <em>Love does not die quietly. It gets buried under the laundry, the unanswered texts, the defensiveness of exhaustion, and the silent assumption that our partner can read our minds.</em>
+        </p>
+        <p>
+          When couples tell me, 'We just fight constantly,' I look beneath the surface. Anger is almost never the primary emotion. Anger is the bodyguard of grief. Beneath 'Why didn’t you take out the trash?' is almost always: 'Do you still see me? Do I still matter to you?'"
+        </p>
+        <div class="p-4 bg-clay-50 rounded-xl border border-clay-200 font-sans text-xs">
+          <strong>Key Takeaway from Step 1:</strong> Before you can fix a marriage, you must stop the bleeding. In the Smart Restart, we don't start with solutions—we start with emotional de-escalation.
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-clay-200 mt-4 flex items-center justify-between">
+        <span class="text-xs text-warmdark/60">Ready to read the complete 5 steps?</span>
+        <a href="https://www.amazon.com" target="_blank" class="bg-warmdark hover:bg-black text-white font-semibold px-4 py-2 rounded-full text-xs flex items-center gap-1.5">
+          <span>Get The Full Book On Amazon</span>
+          <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPTS & INTERACTIVITY LOGIC -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Modal Control Functions
+    function openModal(id) {
+      document.getElementById(id).classList.remove('hidden');
+    }
+    function closeModal(id) {
+      document.getElementById(id).classList.add('hidden');
+    }
+
+    // ========================================================
+    // NEURODIVERGENT AI CONVERSATION ANALYZER DATA & LOGIC
+    // ========================================================
+    const neuroScenarios = [
+      {
+        dynamic: "adhd-nt",
+        badge: "ADHD: Task Paralysis & Working Memory",
+        raw: "You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders.",
+        brain: "This is <strong>executive dysfunction & working memory drop</strong>, not lack of love. To an ADHD brain, tasks without immediate dopamine urgency vanish the moment attention shifts. Calling this 'lack of love' sends the ADHD brain into shame and defensive paralysis.",
+        partner: "The non-ADHD partner feels exhausted by continuous cognitive load and starts feeling like an unappreciated parent rather than an equal partner.",
+        script: "\"I know you love me and didn't forget on purpose, but when this task dropped, it made me feel alone with the house stress. Can we sit down right now for 2 minutes and make the call together so you don't have to carry it alone?\""
+      },
+      {
+        dynamic: "asd-nt",
+        badge: "Autism / Expressive Disconnect: Flat Affect",
+        raw: "I was crying and pouring my heart out, and you just stared at me blankly like a robot without empathy!",
+        brain: "In an autistic or high-sensory processing brain, intense emotional crying triggers severe internal overwhelm. The 'blank stare' is actually <strong>emotional buffering & regulation</strong>, not indifference. Deep feeling is occurring without mirror-neuron facial expressions.",
+        partner: "The expressive partner relies on visible facial feedback to feel emotionally heard and interpreted the stillness as icy cold abandonment.",
+        script: "\"I see that you're taking this in and might be feeling flooded. I don't need you to fix this right now; I just need to know you hear me. Could you just hold my hand while I breathe?\""
+      },
+      {
+        dynamic: "rsd",
+        badge: "Rejection Sensitive Dysphoria (RSD)",
+        raw: "I asked for 20 minutes of quiet when I walked in, and you blew up saying I don't love you.",
+        brain: "When a partner asks for space, an RSD-wired nervous system interprets that request as a <strong>visceral physical threat of sudden abandonment and total rejection</strong>, causing an immediate fight-or-flight adrenaline surge.",
+        partner: "The returning partner needed decompression after work and felt punished and walk-on-eggshells for stating a simple biological sensory need.",
+        script: "\"I love you so much, you are my favorite person, and nothing is wrong between us. My nervous system is just on 100% overload from work. I'm going to take 20 minutes to recharge, and then I can't wait to give you a big hug and hear about your day.\""
+      },
+      {
+        dynamic: "double-nd",
+        badge: "Double Neurodivergent: Sensory Clash",
+        raw: "Your fidgeting and clicking pens is driving me insane, why can't you just sit still?!",
+        brain: "One partner uses physical fidgeting/stimming to regulate attention and nervous system calm; the other partner has misophonia or sensory audio overload where that exact clicking sounds deafening.",
+        partner: "Neither is 'wrong'; two valid neurological needs are in direct physical collision.",
+        script: "\"My sensory tank is completely in the red right now and repetitive sounds are hurting my brain. I know you need to fidget—could we switch to a quiet squeeze tool, or can I put on my noise-canceling headphones while we sit together?\""
+      }
+    ];
+
+    let currentNeuroIndex = 0;
+
+    function setNeuroDynamic(type) {
+      document.querySelectorAll('#neuroDynamicChips button').forEach(b => b.classList.remove('tab-active'));
+      const activeBtn = document.getElementById(`chip-${type}`);
+      if (activeBtn) activeBtn.classList.add('tab-active');
+
+      const found = neuroScenarios.find(s => s.dynamic === type);
+      if (found) {
+        currentNeuroIndex = neuroScenarios.indexOf(found);
+        loadNeuroScenario(currentNeuroIndex);
+      }
+    }
+
+    function loadNeuroScenario(index) {
+      currentNeuroIndex = index;
+      const s = neuroScenarios[index];
+      document.getElementById('neuroScenarioBadge').innerText = s.badge;
+      document.getElementById('neuroRawText').value = s.raw;
+      
+      // Update active chip
+      document.querySelectorAll('#neuroDynamicChips button').forEach(b => b.classList.remove('tab-active'));
+      const chip = document.getElementById(`chip-${s.dynamic}`);
+      if (chip) chip.classList.add('tab-active');
+
+      runNeuroAnalysis(s);
+    }
+
+    function runNeuroAnalysis(customScenario = null) {
+      const s = customScenario || neuroScenarios[currentNeuroIndex];
+      const resultContainer = document.getElementById('neuroResultCards');
+      const loader = document.getElementById('neuroLoading');
+
+      resultContainer.classList.add('hidden');
+      loader.classList.remove('hidden');
+
+      setTimeout(() => {
+        loader.classList.add('hidden');
+        resultContainer.classList.remove('hidden');
+
+        document.getElementById('neuroBrainReality').innerHTML = s.brain;
+        document.getElementById('neuroPartnerImpact').innerText = s.partner;
+        document.getElementById('neuroBridgeScript').innerText = s.script;
+
+        lucide.createIcons();
+      }, 550);
+    }
+
+    // Audio Snippet Simulator
+    let isPlayingAudio = false;
+    function toggleAudioPreview() {
+      isPlayingAudio = !isPlayingAudio;
+      const btnIcon = document.getElementById('audioIcon');
+      const text = document.getElementById('audioStatusText');
+      const wave = document.getElementById('audioWaveform');
+      
+      if (isPlayingAudio) {
+        btnIcon.setAttribute('data-lucide', 'pause');
+        text.innerText = "Playing Dr. Liz's welcome audio clip...";
+        wave.classList.remove('opacity-40');
+        wave.classList.add('opacity-100');
+      } else {
+        btnIcon.setAttribute('data-lucide', 'play');
+        text.innerText = "Listen to a 45-second message for struggling couples";
+        wave.classList.remove('opacity-100');
+        wave.classList.add('opacity-40');
+      }
+      lucide.createIcons();
+    }
+
+    // General De-escalation Translator
+    const presets = [
+      {
+        raw: "You never help around the house and it feels like you expect me to be your maid!",
+        quote: "\"I’ve been feeling really overwhelmed trying to balance everything at home lately. It would make me feel so supported and loved if we could tackle dinner cleanup together tonight as a team.\"",
+        need: "Craving shared partnership, feeling overburdened and unseen.",
+        works: "Removes accusatory 'maid' and 'never' triggers; replaces them with vulnerability and an actionable team request."
+      },
+      {
+        raw: "You care way more about your phone and scrolling social media than you care about talking to me.",
+        quote: "\"I really miss the way we used to talk and laugh together in the evenings. Can we make a date tonight to put our phones away for 30 minutes and just hang out on the couch?\"",
+        need: "Desire for genuine emotional connection and focused partner attention.",
+        works: "Expresses a fond memory of intimacy rather than policing screen habits, sparking warmth instead of shame."
+      },
+      {
+        raw: "Why do you always shut down and give me the silent treatment whenever things get hard?!",
+        quote: "\"I notice when things get tense, we both retreat. It scares me when there's silence between us because I love you and want us to be okay. Can we take a 10-minute pause and come back when we're calm?\"",
+        need: "Fear of abandonment / emotional withdrawal; longing for emotional safety.",
+        works: "Honors the partner's need to regulate without letting the conflict linger into prolonged resentment."
+      }
+    ];
+
+    function setTranslatorPreset(index) {
+      const p = presets[index];
+      document.getElementById('rawConflictInput').value = p.raw;
+      document.getElementById('charCount').innerText = `${p.raw.length} chars`;
+      runDeescalationTranslation(p);
+    }
+
+    function runDeescalationTranslation(presetData = null) {
+      const rawText = document.getElementById('rawConflictInput').value.trim();
+      if (!rawText) return;
+
+      document.getElementById('translateResult').classList.add('hidden');
+      document.getElementById('translateLoading').classList.remove('hidden');
+
+      setTimeout(() => {
+        document.getElementById('translateLoading').classList.add('hidden');
+        document.getElementById('translateResult').classList.remove('hidden');
+
+        if (presetData) {
+          document.getElementById('translatedQuote').innerText = presetData.quote;
+          document.getElementById('underlyingNeed').innerText = presetData.need;
+          document.getElementById('whyItWorks').innerText = presetData.works;
+        } else {
+          document.getElementById('translatedQuote').innerText = `"When this comes up, I feel a lot of stress because our relationship means so much to me. I want us to be on the same page. Can we pause and look at this as us against the problem, rather than against each other?"`;
+          document.getElementById('underlyingNeed').innerText = "Vulnerability, fear of disconnection, wanting partnership reassurance.";
+          document.getElementById('whyItWorks').innerText = "Shifts posture from adversarial blame to collaborative problem-solving.";
+        }
+        lucide.createIcons();
+      }, 550);
+    }
+
+    // 60-Second Relationship Clarity Pulse Logic
+    const quizQuestions = [
+      {
+        title: "Communication Rhythm",
+        question: "When you and your partner disagree, what typically happens?",
+        options: [
+          { text: "One of us shuts down or walks away while the other gets frustrated", type: "withdrawer" },
+          { text: "We rarely fight, but we live like polite roommates with little romance", type: "roommate" },
+          { text: "Arguments escalate quickly into hurtful words and days of silence", type: "conflict" },
+          { text: "We communicate decently, but we want to reignite our early passion", type: "passion" }
+        ]
+      },
+      {
+        title: "Emotional Connection",
+        question: "How would you describe the feeling when you are in the same room?",
+        options: [
+          { text: "Tense or walking on eggshells, worried about starting a fight", type: "conflict" },
+          { text: "Friendly and cordial, but emotionally distant or surface-level", type: "roommate" },
+          { text: "One partner is constantly trying to reach out, but feels shut out", type: "withdrawer" },
+          { text: "Warm, but life's logistics and kids have drained our spark", type: "passion" }
+        ]
+      },
+      {
+        title: "Intimacy & Affection",
+        question: "Where is physical affection and romance right now?",
+        options: [
+          { text: "Almost non-existent; it feels awkward or like a chore", type: "roommate" },
+          { text: "It only happens if one person initiates, leading to resentment", type: "withdrawer" },
+          { text: "Damaged by recent arguments, betrayal, or broken trust", type: "conflict" },
+          { text: "Occasional, but we miss deep playful passion", type: "passion" }
+        ]
+      },
+      {
+        title: "Your Reconnection Goal",
+        question: "If Dr. Liz could wave a wand, what would you most want back?",
+        options: [
+          { text: "Feeling like best friends who laugh and enjoy each other again", type: "roommate" },
+          { text: "Safe communication where we can talk without defensiveness", type: "conflict" },
+          { text: "Knowing my partner is truly emotionally accessible and present", type: "withdrawer" },
+          { text: "Reigniting deep romantic chemistry and long-term vision", type: "passion" }
+        ]
+      }
+    ];
+
+    let currentQuizStep = 0;
+    let quizAnswers = [];
+
+    function renderQuizStep() {
+      const q = quizQuestions[currentQuizStep];
+      document.getElementById('quizStepNumber').innerText = currentQuizStep + 1;
+      document.getElementById('quizStepTitle').innerText = q.title;
+      document.getElementById('quizProgressText').innerText = `Question ${currentQuizStep + 1} of 4`;
+      document.getElementById('quizQuestionText').innerText = q.question;
+
+      const optsContainer = document.getElementById('quizOptionsList');
+      optsContainer.innerHTML = '';
+
+      q.options.forEach((opt) => {
+        const btn = document.createElement('button');
+        btn.className = "w-full text-left p-4 rounded-xl border border-clay-200 hover:border-clay-500 hover:bg-clay-50/70 transition-all text-xs sm:text-sm font-medium text-warmdark flex items-center justify-between group";
+        btn.innerHTML = `
+          <span>${opt.text}</span>
+          <i data-lucide="chevron-right" class="w-4 h-4 text-clay-400 group-hover:text-clay-600 group-hover:translate-x-1 transition-all"></i>
+        `;
+        btn.onclick = () => selectQuizOption(opt.type);
+        optsContainer.appendChild(btn);
+      });
+      lucide.createIcons();
+    }
+
+    function selectQuizOption(type) {
+      quizAnswers.push(type);
+      if (currentQuizStep < quizQuestions.length - 1) {
+        currentQuizStep++;
+        renderQuizStep();
+      } else {
+        showQuizResult();
+      }
+    }
+
+    function showQuizResult() {
+      document.getElementById('quizQuestionContainer').classList.add('hidden');
+      document.getElementById('quizResultContainer').classList.remove('hidden');
+
+      const counts = quizAnswers.reduce((acc, val) => {
+        acc[val] = (acc[val] || 0) + 1;
+        return acc;
+      }, {});
+      
+      const dominant = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b, 'roommate');
+
+      const resultsMap = {
+        roommate: {
+          title: 'The "Roommate Drift" Dynamic',
+          desc: "You both still care deeply for each other, but logistics, work, and routines have crowded out passionate romance and deep emotional intimacy. You are running a home together, but feeling lonely in the same bed.",
+          action: "Focus on Step 1 of the Smart Restart: 'Micro-Moments of Reconnection.' You don't need a 2-hour discussion; you need 7-minute daily intentional habits."
+        },
+        conflict: {
+          title: 'The "High-Reactivity Conflict Cycle"',
+          desc: "Small disagreements quickly mushroom into defensive arguments. Both of you are exhausted from walking on eggshells, and the underlying love is masked by protective walls.",
+          action: "Prioritize Step 1: 'The De-escalation Protocol.' Learn how to soothe nervous systems before trying to solve recurring problems."
+        },
+        withdrawer: {
+          title: 'The "Pursuer & Withdrawer" Dynamic',
+          desc: "One partner longs for connection and presses for answers, while the other feels overwhelmed and retreats into silence or work. Both end up feeling misunderstood.",
+          action: "Use Step 2: 'Restoring Safe Vulnerability.' Give the pursuer reassurance and the withdrawer safe space without abandonment."
+        },
+        passion: {
+          title: 'The "Ready For The Flame" Stage',
+          desc: "Your foundation is solid, but you crave the spark, playfulness, and spontaneous joy you used to have in your early years.",
+          action: "Jump directly into Step 3: 'Renew & Reignite.' Cultivate intentional dates and shared relationship vision."
+        }
+      };
+
+      const res = resultsMap[dominant] || resultsMap.roommate;
+      document.getElementById('resultPatternTitle').innerText = res.title;
+      document.getElementById('resultPatternDesc').innerText = res.desc;
+      document.getElementById('resultActionStep').innerHTML = res.action;
+      lucide.createIcons();
+    }
+
+    function resetQuiz() {
+      currentQuizStep = 0;
+      quizAnswers = [];
+      document.getElementById('quizQuestionContainer').classList.remove('hidden');
+      document.getElementById('quizResultContainer').classList.add('hidden');
+      renderQuizStep();
+    }
+
+    // AI Concierge Chatbot Widget
+    let isChatOpen = false;
+    function toggleChatWidget() {
+      isChatOpen = !isChatOpen;
+      const win = document.getElementById('chatWindow');
+      if (isChatOpen) {
+        win.classList.remove('hidden');
+      } else {
+        win.classList.add('hidden');
+      }
+      lucide.createIcons();
+    }
+
+    function sendQuickMessage(text) {
+      document.getElementById('chatInput').value = text;
+      sendChatMessage();
+    }
+
+    function sendChatMessage() {
+      const input = document.getElementById('chatInput');
+      const msg = input.value.trim();
+      if (!msg) return;
+
+      const container = document.getElementById('chatMessages');
+
+      const userBubble = document.createElement('div');
+      userBubble.className = "flex items-start justify-end gap-2";
+      userBubble.innerHTML = `
+        <div class="bg-clay-600 text-white p-3 rounded-2xl rounded-tr-none leading-relaxed max-w-[85%]">
+          ${msg}
+        </div>
+      `;
+      container.appendChild(userBubble);
+      input.value = '';
+      container.scrollTop = container.scrollHeight;
+
+      const typing = document.createElement('div');
+      typing.id = 'botTyping';
+      typing.className = "flex items-start gap-2";
+      typing.innerHTML = `
+        <div class="w-6 h-6 rounded-full bg-clay-200 text-clay-800 flex items-center justify-center font-bold text-[10px] shrink-0">L</div>
+        <div class="bg-clay-100 p-2.5 rounded-2xl rounded-tl-none text-warmdark/60 text-[11px] italic">
+          Dr. Liz’s concierge is formulating a thoughtful response...
+        </div>
+      `;
+      container.appendChild(typing);
+      container.scrollTop = container.scrollHeight;
+
+      setTimeout(() => {
+        const botTyping = document.getElementById('botTyping');
+        if (botTyping) botTyping.remove();
+
+        let reply = "That's a very common struggle that Dr. Liz sees every week. In her 38 years as a couples therapist, she's found that shifting the tone of communication from blame to vulnerable needs opens up breakthroughs faster than anything else.";
+        
+        const lower = msg.toLowerCase();
+        if (lower.includes("adhd") || lower.includes("neuro") || lower.includes("autis") || lower.includes("rsd")) {
+          reply = "Neurodivergent relationships require neuro-affirming tools! Dr. Liz specializes in decoding ADHD executive function, sensory overwhelm, and rejection sensitivity (RSD) so couples stop blaming each other for how their brains process information.";
+        } else if (lower.includes("partner won't") || lower.includes("refuses") || lower.includes("husband")) {
+          reply = "You don't both have to start at the exact same moment! Dr. Liz often works 1:1 with one partner first. When you learn how to stop triggering your partner's defensiveness, the dynamic shifts so positively that they often ask to join in on the second or third session.";
+        } else if (lower.includes("smart restart") || lower.includes("3-step") || lower.includes("how does")) {
+          reply = "The 3-Step Smart Restart consists of: 1) Repair (stopping negative conflict loops), 2) Restore (rebuilding emotional safety & trust), and 3) Renew (reigniting playful passion and daily micro-habits). It’s designed to produce shifts in weeks, not years.";
+        } else if (lower.includes("book") || lower.includes("consult") || lower.includes("cost") || lower.includes("price")) {
+          reply = "Dr. Liz offers a complimentary Relationship Strategy Call so you can talk through what's happening and see if the VIP coaching or courses are a fit. You can click 'Book Free Consult' at the top of the page to choose a time that works for you!";
+        }
+
+        const botBubble = document.createElement('div');
+        botBubble.className = "flex items-start gap-2";
+        botBubble.innerHTML = `
+          <div class="w-6 h-6 rounded-full bg-clay-200 text-clay-800 flex items-center justify-center font-bold text-[10px] shrink-0">L</div>
+          <div class="bg-clay-100/90 p-3 rounded-2xl rounded-tl-none text-warmdark leading-relaxed max-w-[85%]">
+            ${reply}
+          </div>
+        `;
+        container.appendChild(botBubble);
+        container.scrollTop = container.scrollHeight;
+        lucide.createIcons();
+      }, 600);
+    }
+
+    // Modal Form Handlers
+    function handleConsultSubmit(e) {
+      e.preventDefault();
+      document.getElementById('consultForm').classList.add('hidden');
+      document.getElementById('consultSuccessMsg').classList.remove('hidden');
+    }
+    function handleCheatSheetSubmit(e) {
+      e.preventDefault();
+      document.getElementById('cheatSheetForm').classList.add('hidden');
+      document.getElementById('cheatSheetSuccess').classList.remove('hidden');
+    }
+
+    // Initialize Quiz & Neuro tool on Load
+    renderQuizStep();
+    runNeuroAnalysis();
+  </script>
+</body>
+</html>
