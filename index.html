@@ -11,7 +11,7 @@
   <!-- Google Fonts: Cormorant Garamond & Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
   
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest"></script>
@@ -69,13 +69,15 @@
       -webkit-backdrop-filter: blur(14px);
       border: 1px solid rgba(213, 148, 122, 0.22);
     }
-    .neuro-glow {
-      box-shadow: 0 0 25px -4px rgba(92, 105, 87, 0.25);
-    }
     .tab-active {
       background-color: #3e483b !important;
       color: #ffffff !important;
       border-color: #3e483b !important;
+    }
+    .tool-tab-active {
+      border-bottom: 3px solid #ad5f44;
+      color: #ad5f44;
+      font-weight: 700;
     }
   </style>
 </head>
@@ -84,8 +86,8 @@
   <!-- Top Value Banner -->
   <div class="bg-warmdark text-clay-100 text-xs sm:text-sm py-2.5 px-4 text-center font-medium tracking-wide flex items-center justify-center gap-2">
     <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
-    <span><strong>Interactive AI Upgrade:</strong> Test the new Neuro-Inclusive Conversation & Dynamic Analyzer below</span>
-    <a href="#neuro-ai" class="underline ml-1 hover:text-white transition-colors">Try It Live &rarr;</a>
+    <span><strong>New AI Clinical Suite:</strong> Powered by trauma-aware neuro-inclusive relationship analysis</span>
+    <a href="#clinical-ai-suite" class="underline ml-1 hover:text-white transition-colors">Experience The AI Suite &rarr;</a>
   </div>
 
   <!-- Sticky Navigation -->
@@ -98,19 +100,17 @@
       </a>
 
       <!-- Desktop Nav -->
-      <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-warmdark/80">
+      <nav class="hidden lg:flex items-center gap-6 text-sm font-medium text-warmdark/80">
         <a href="#about" class="hover:text-clay-600 transition-colors">About Dr. Liz</a>
         <a href="#method" class="hover:text-clay-600 transition-colors">The 3-Step Restart</a>
-        <a href="#neuro-ai" class="hover:text-clay-600 transition-colors flex items-center gap-1.5 text-sage-800 font-bold bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
-          <i data-lucide="brain-circuit" class="w-4 h-4 text-sage-700"></i> Neurodivergent AI Suite
-        </a>
-        <a href="#ai-translator" class="hover:text-clay-600 transition-colors flex items-center gap-1.5 text-clay-700 font-semibold">
-          <i data-lucide="sparkles" class="w-4 h-4 text-clay-500"></i> De-escalation Tool
+        <a href="#clinical-ai-suite" class="hover:text-clay-600 transition-colors flex items-center gap-1.5 text-sage-900 font-bold bg-sage-100 px-3 py-1 rounded-full border border-sage-200">
+          <i data-lucide="brain-circuit" class="w-4 h-4 text-sage-700"></i> Co-Regulate AI Suite
         </a>
         <a href="#clarity-pulse" class="hover:text-clay-600 transition-colors flex items-center gap-1.5">
-          <i data-lucide="activity" class="w-4 h-4 text-clay-500"></i> 60s Quiz
+          <i data-lucide="compass" class="w-4 h-4 text-clay-500"></i> Conflict Compass
         </a>
         <a href="#book" class="hover:text-clay-600 transition-colors">The Book</a>
+        <a href="#coaching" class="hover:text-clay-600 transition-colors">VIP Coaching</a>
       </nav>
 
       <!-- CTA Button -->
@@ -143,7 +143,7 @@
         </h1>
 
         <p class="text-base sm:text-lg text-warmdark/75 leading-relaxed max-w-xl">
-          Tired of feeling like roommates walking on eggshells? Whether you're navigating classic communication hurdles or neurodivergent relationship dynamics (ADHD, Autism, Sensory Overload & RSD), Dr. Liz Jenkins bridges the gap into deep passion, mutual understanding, and lasting connection.
+          Tired of feeling like roommates walking on eggshells? Whether you're navigating recurring blame cycles, sensory overwhelm, or neurodivergent relationship dynamics (ADHD executive dysfunction & RSD), Dr. Liz Jenkins bridges the gap into deep passion, psychological safety, and lasting connection.
         </p>
 
         <!-- CTA Row -->
@@ -153,9 +153,9 @@
             <i data-lucide="calendar" class="w-4 h-4"></i>
           </button>
           
-          <a href="#neuro-ai" class="bg-white hover:bg-sage-50 border border-sage-300 text-warmdark font-medium px-6 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-sm sm:text-base">
+          <a href="#clinical-ai-suite" class="bg-white hover:bg-sage-50 border border-sage-300 text-warmdark font-medium px-6 py-3.5 rounded-full transition-all flex items-center justify-center gap-2 text-sm sm:text-base">
             <i data-lucide="brain-circuit" class="w-4 h-4 text-sage-700"></i>
-            <span>Test Neurodivergent AI Tool</span>
+            <span>Test Co-Regulate AI Suite</span>
           </a>
         </div>
 
@@ -170,8 +170,8 @@
             <div class="text-xs text-warmdark/60 font-medium">Personal Happy Marriage</div>
           </div>
           <div>
-            <div class="font-serif-luxury text-3xl font-bold text-warmdark">Neuro-Aware</div>
-            <div class="text-xs text-warmdark/60 font-medium">ADHD & ASD Inclusive</div>
+            <div class="font-serif-luxury text-3xl font-bold text-warmdark">ADHD/ND</div>
+            <div class="text-xs text-warmdark/60 font-medium">Neuro-Affirming Lens</div>
           </div>
         </div>
       </div>
@@ -250,169 +250,326 @@
   </section>
 
   <!-- ======================================================== -->
-  <!-- SPECIAL HIGHLIGHT: NEURODIVERGENT AI CONVERSATION & PERSONALITY ANALYZER -->
+  <!-- CO-REGULATE: CLINICAL RELATIONSHIP AI SUITE -->
   <!-- ======================================================== -->
-  <section id="neuro-ai" class="py-20 bg-gradient-to-b from-[#f3f6f2] via-white to-clay-50/50 border-y border-sage-200">
+  <section id="clinical-ai-suite" class="py-20 bg-gradient-to-b from-[#f3f6f2] via-white to-clay-50/50 border-y border-sage-200">
     <div class="max-w-6xl mx-auto px-6">
       
-      <div class="text-center max-w-3xl mx-auto space-y-3 mb-12">
+      <div class="text-center max-w-3xl mx-auto space-y-3 mb-10">
         <div class="inline-flex items-center gap-2 bg-sage-200 text-sage-900 text-xs font-bold px-4 py-1.5 rounded-full tracking-wider uppercase">
-          <i data-lucide="brain" class="w-4 h-4 text-sage-700"></i>
-          Neuro-Inclusive Relationship Intelligence
+          <i data-lucide="shield-alert" class="w-4 h-4 text-sage-700"></i>
+          Co-Regulate: Trauma-Aware & Neuro-Inclusive Relationship Suite
         </div>
         <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
-          Decode ADHD, Autism & Neurodivergent Communication Loops
+          De-Escalate Arguments, Decode ADHD Triggers & Repair Safely
         </h2>
         <p class="text-sm sm:text-base text-warmdark/75">
-          Standard marriage advice often backfires with neurodivergent couples. When one or both partners have ADHD, Autism, Sensory Sensitivities, or Rejection Sensitive Dysphoria (RSD), everyday misunderstandings feel like betrayal. 
-          Use Dr. Liz’s AI tool below to translate conflict through a compassionate neuro-affirming lens.
+          Designed from clinical conflict resolution and neurodiversity frameworks. Analyze recent fights, get real-time conversation turn support, or review audio conflict diarization.
         </p>
       </div>
 
-      <!-- Main Neuro Tool Card -->
+      <!-- Suite Tabs Bar -->
       <div class="bg-white rounded-3xl shadow-xl border border-sage-200 overflow-hidden">
         
-        <!-- Profile / Dynamic Selector Bar -->
-        <div class="p-4 sm:p-6 bg-sage-50/80 border-b border-sage-200 flex flex-col md:flex-row md:items-center justify-between gap-4">
-          <div class="flex items-center gap-2">
-            <i data-lucide="git-branch" class="w-4 h-4 text-sage-700"></i>
-            <span class="text-xs font-bold uppercase tracking-wider text-warmdark">Select Your Couple Dynamic:</span>
-          </div>
-          <div class="flex flex-wrap items-center gap-2" id="neuroDynamicChips">
-            <button onclick="setNeuroDynamic('adhd-nt')" id="chip-adhd-nt" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100 tab-active">
-              ADHD + Neurotypical
-            </button>
-            <button onclick="setNeuroDynamic('asd-nt')" id="chip-asd-nt" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
-              Autistic / Flat-Affect + Expressive Partner
-            </button>
-            <button onclick="setNeuroDynamic('rsd')" id="chip-rsd" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
-              Rejection Sensitivity (RSD) Trigger
-            </button>
-            <button onclick="setNeuroDynamic('double-nd')" id="chip-double-nd" class="text-xs font-semibold px-3 py-1.5 rounded-full border border-sage-300 bg-white text-warmdark transition-all hover:bg-sage-100">
-              Double Neurodivergent (ADHD + ASD)
-            </button>
-          </div>
+        <div class="flex border-b border-sage-200 overflow-x-auto text-xs sm:text-sm font-semibold bg-sage-50/60">
+          <button onclick="switchSuiteTab('incident')" id="tabBtn-incident" class="px-6 py-4 flex items-center gap-2 text-warmdark border-b-2 border-transparent hover:text-clay-700 transition-all tool-tab-active">
+            <i data-lucide="file-text" class="w-4 h-4"></i> Incident & Neuro-Loop Analyzer
+          </button>
+          <button onclick="switchSuiteTab('realtime')" id="tabBtn-realtime" class="px-6 py-4 flex items-center gap-2 text-warmdark/70 border-b-2 border-transparent hover:text-clay-700 transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4"></i> Real-Time Turn Assistant (Chat/Screenshot)
+          </button>
+          <button onclick="switchSuiteTab('audio')" id="tabBtn-audio" class="px-6 py-4 flex items-center gap-2 text-warmdark/70 border-b-2 border-transparent hover:text-clay-700 transition-all">
+            <i data-lucide="mic" class="w-4 h-4"></i> Audio Conflict Diarization
+          </button>
         </div>
 
-        <!-- Analyzer Grid -->
-        <div class="grid grid-cols-1 lg:grid-cols-12 divide-y lg:divide-y-0 lg:divide-x divide-sage-200">
-          
-          <!-- Left: Conflict Snippet & Context Input (5 cols) -->
-          <div class="lg:col-span-5 p-6 sm:p-8 space-y-5 bg-white flex flex-col justify-between">
-            <div class="space-y-4">
-              <div class="flex items-center justify-between">
-                <label class="text-xs font-bold uppercase tracking-wider text-warmdark flex items-center gap-1.5">
-                  <i data-lucide="message-square-warning" class="w-4 h-4 text-amber-600"></i> The Conflict / Conversation
-                </label>
-                <span class="text-[10px] text-warmdark/50" id="neuroScenarioBadge">Preset: Task Paralysis</span>
+        <!-- =================== TAB 1: INCIDENT & NEURO-LOOP ANALYZER =================== -->
+        <div id="suiteTab-incident" class="p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-sage-100">
+            <div>
+              <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Behavioral Incident & Loop Analysis</h3>
+              <p class="text-xs text-warmdark/60">Pinpoint breakdown points, accountability, and detect weaponized neurodivergence.</p>
+            </div>
+            
+            <!-- ADHD Mode Toggle Switch -->
+            <div class="flex items-center gap-3 bg-sage-100/80 px-4 py-2 rounded-2xl border border-sage-200">
+              <i data-lucide="brain" class="w-4 h-4 text-sage-800"></i>
+              <div class="text-left">
+                <div class="text-xs font-bold text-warmdark">ADHD Mode Lens</div>
+                <div class="text-[10px] text-warmdark/60">Accounts for blurting & working memory</div>
               </div>
+              <button onclick="toggleAdhdMode()" id="adhdToggleBtn" class="ml-2 w-11 h-6 rounded-full bg-emerald-600 relative transition-colors">
+                <span id="adhdToggleCircle" class="w-5 h-5 bg-white rounded-full absolute top-0.5 right-0.5 shadow transition-all"></span>
+              </button>
+            </div>
+          </div>
 
-              <!-- Quick Scenarios -->
-              <div class="flex flex-col gap-1.5">
-                <span class="text-[11px] font-semibold text-warmdark/60">Common Real-World Examples:</span>
-                <button onclick="loadNeuroScenario(0)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
-                  "You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders."
-                </button>
-                <button onclick="loadNeuroScenario(1)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
-                  "I was crying and pouring my heart out, and you just stared at me blankly like a robot!"
-                </button>
-                <button onclick="loadNeuroScenario(2)" class="text-left text-xs p-2.5 rounded-xl border border-sage-200 bg-sage-50/50 hover:bg-sage-100/70 transition-all text-warmdark/90">
-                  "I asked for 20 minutes of quiet when I walked in, and you blew up saying I don't love you."
-                </button>
+          <!-- Incident Form Grid -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <!-- Form Input (5 cols) -->
+            <div class="lg:col-span-5 space-y-4">
+              <div>
+                <label class="block text-xs font-bold uppercase tracking-wider text-warmdark mb-1">Preset Incident Scenarios:</label>
+                <div class="flex flex-col gap-1.5">
+                  <button onclick="loadIncidentPreset(0)" class="text-left text-xs p-2 rounded-xl border border-sage-200 bg-sage-50/70 hover:bg-sage-100 transition-all">
+                    📌 <strong>Forgotten Contractor Call</strong> (ADHD Task Paralysis vs Disrespect)
+                  </button>
+                  <button onclick="loadIncidentPreset(1)" class="text-left text-xs p-2 rounded-xl border border-sage-200 bg-sage-50/70 hover:bg-sage-100 transition-all">
+                    📌 <strong>Interruption & Explosion</strong> (Weaponized Neurodivergence)
+                  </button>
+                  <button onclick="loadIncidentPreset(2)" class="text-left text-xs p-2 rounded-xl border border-sage-200 bg-sage-50/70 hover:bg-sage-100 transition-all">
+                    📌 <strong>Work Decompression Clash</strong> (Boundary & Sensory Overload)
+                  </button>
+                </div>
               </div>
 
               <div>
-                <label class="text-[11px] font-semibold text-warmdark/70 block mb-1">Custom Conflict Words:</label>
-                <textarea 
-                  id="neuroRawText" 
-                  rows="3" 
-                  class="w-full text-xs sm:text-sm p-3.5 rounded-xl border border-sage-300 focus:border-sage-600 focus:ring-2 focus:ring-sage-200 outline-none resize-none transition-all"
-                  placeholder="Paste what you or your partner said during the misunderstanding..."
-                >You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders.</textarea>
+                <label class="block text-xs font-semibold text-warmdark mb-1">Conflict Category</label>
+                <select id="incidentCategory" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 bg-white outline-none">
+                  <option value="chore/logistics">Chore / Logistics Breakdown</option>
+                  <option value="trust concern">Trust & Emotional Invalidation</option>
+                  <option value="boundary issue">Boundary & Sensory Overwhelm</option>
+                  <option value="general argument">Recurring High-Conflict Loop</option>
+                </select>
               </div>
-            </div>
 
-            <div class="pt-3">
-              <button 
-                onclick="runNeuroAnalysis()" 
-                id="runNeuroBtn"
-                class="w-full bg-sage-700 hover:bg-sage-800 text-white font-semibold py-3 px-5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
-              >
-                <i data-lucide="brain-circuit" class="w-4 h-4"></i>
-                <span>Analyze Neurodivergent Disconnect</span>
+              <div>
+                <label class="block text-xs font-semibold text-warmdark mb-1">Incident Summary</label>
+                <input id="incidentSummaryInput" type="text" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 outline-none" value="Partner forgot to make an urgent contractor phone call despite promising 3 times." />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-warmdark mb-1">What Happened (User & Partner Actions)</label>
+                <textarea id="incidentPerspectiveInput" rows="3" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 outline-none resize-none">Person A blurted an interruption while Person B was talking about work, which triggered Person B to yell 'You never listen to me!' and storm out.</textarea>
+              </div>
+
+              <button onclick="runIncidentAnalysis()" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3 rounded-xl text-xs shadow-md flex items-center justify-center gap-2">
+                <i data-lucide="sparkles" class="w-4 h-4"></i> Run Trauma-Aware Incident Analysis
               </button>
             </div>
-          </div>
 
-          <!-- Right: 3-Lens AI Breakdown (7 cols) -->
-          <div class="lg:col-span-7 p-6 sm:p-8 bg-sage-50/30 space-y-5 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-4">
+            <!-- Analysis Output (7 cols) -->
+            <div class="lg:col-span-7 bg-sage-50/40 border border-sage-200 rounded-2xl p-6 space-y-4">
+              <div class="flex items-center justify-between border-b border-sage-200 pb-3">
                 <span class="text-xs font-bold uppercase tracking-wider text-sage-900 flex items-center gap-1.5">
-                  <i data-lucide="layers" class="w-4 h-4 text-sage-700"></i> The Clinical Neuro-Inclusive Breakdown
+                  <i data-lucide="check-circle" class="w-4 h-4 text-emerald-600"></i> Behavioral Summary & Breakdown
                 </span>
-                <span class="text-[10px] bg-sage-200 text-sage-800 font-bold px-2.5 py-0.5 rounded-full">
-                  Empathy + Brain Chemistry
-                </span>
+                <span class="text-[10px] bg-sage-200 text-sage-800 font-bold px-2 py-0.5 rounded-full">Neutral AI Mediator</span>
               </div>
 
-              <!-- Loading Indicator -->
-              <div id="neuroLoading" class="hidden py-12 text-center space-y-2">
-                <i data-lucide="loader" class="w-7 h-7 text-sage-600 animate-spin mx-auto"></i>
-                <div class="text-xs text-warmdark/60 font-medium">Decoding working memory, sensory regulation, and emotional impact...</div>
+              <!-- Weaponized Neurodivergence Alert -->
+              <div id="weaponizedAlert" class="bg-purple-50 border border-purple-200 p-4 rounded-xl space-y-1">
+                <div class="text-purple-800 font-bold text-xs uppercase flex items-center gap-1.5">
+                  <i data-lucide="brain" class="w-4 h-4 text-purple-700"></i>
+                  <span>Weaponized Neurodivergence Alert</span>
+                </div>
+                <p id="weaponizedText" class="text-xs text-purple-900 leading-relaxed">
+                  Person B used Person A's neurological ADHD blurt/interruption as a moral justification to escalate into verbal hostility and walk out, bypassing constructive dialogue.
+                </p>
               </div>
 
-              <!-- Analysis Results -->
-              <div id="neuroResultCards" class="space-y-3.5">
+              <!-- Breakdown Attribution -->
+              <div class="bg-rose-50 border border-rose-100 p-4 rounded-xl space-y-1">
+                <div class="text-rose-700 font-bold text-xs uppercase flex items-center gap-1.5">
+                  <i data-lucide="alert-triangle" class="w-4 h-4 text-rose-600"></i>
+                  <span>Breakdown Point / Attribution</span>
+                </div>
+                <p id="breakdownText" class="text-xs text-rose-900 font-medium leading-relaxed">
+                  The conversation failed at second 42 when Person B labeled neurological processing speed as "intentional disrespect," triggering fight-or-flight defensiveness.
+                </p>
+              </div>
+
+              <!-- Accountability Matrix (Person A & Person B) -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div class="p-3.5 bg-white rounded-xl border border-sage-200 shadow-sm space-y-1">
+                  <div class="text-[11px] font-bold text-warmdark uppercase">Person A Accountability</div>
+                  <p id="accountA" class="text-xs text-warmdark/70">Acknowledge that impulsive blurting disrupts conversation rhythm; commit to taking notes during heated moments.</p>
+                </div>
+                <div class="p-3.5 bg-white rounded-xl border border-sage-200 shadow-sm space-y-1">
+                  <div class="text-[11px] font-bold text-warmdark uppercase">Person B Accountability</div>
+                  <p id="accountB" class="text-xs text-warmdark/70">Stop using partner's ADHD traits to justify explosive reactions; regulate nervous system before addressing task boundaries.</p>
+                </div>
+              </div>
+
+              <!-- Concrete Dual Repair Scripts -->
+              <div class="bg-white p-4 rounded-xl border-2 border-clay-300 shadow-sm space-y-3">
+                <div class="text-xs font-bold text-clay-700 uppercase flex items-center justify-between">
+                  <span>Dr. Liz's Dual Repair Scripts</span>
+                  <span class="text-[10px] text-clay-600 font-normal">Smart Restart Step 1</span>
+                </div>
+                <div class="space-y-2 text-xs">
+                  <div class="p-2.5 bg-clay-50/70 rounded-lg border border-clay-100">
+                    <span class="font-bold text-clay-800">Person A:</span> <span id="repairA" class="italic text-warmdark font-serif text-sm">"I'm sorry I interrupted you while you were talking about work. My brain was racing, but I want to give you my full attention. Please continue."</span>
+                  </div>
+                  <div class="p-2.5 bg-clay-50/70 rounded-lg border border-clay-100">
+                    <span class="font-bold text-clay-800">Person B:</span> <span id="repairB" class="italic text-warmdark font-serif text-sm">"I was already overwhelmed and I overreacted when you spoke up. I know you weren't trying to disrespect me. Thank you for listening."</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <!-- =================== TAB 2: REAL-TIME TURN ASSISTANT =================== -->
+        <div id="suiteTab-realtime" class="hidden p-6 sm:p-8 space-y-6">
+          <div class="pb-4 border-b border-sage-100">
+            <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Real-Time Turn Assistant</h3>
+            <p class="text-xs text-warmdark/60">Type the message you just received or upload a screenshot to get 3 de-escalating options.</p>
+          </div>
+
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+            
+            <div class="lg:col-span-5 space-y-4">
+              <!-- Screenshot upload simulation -->
+              <div class="p-4 bg-sage-50 rounded-2xl border-2 border-dashed border-sage-200 text-center space-y-2">
+                <i data-lucide="camera" class="w-6 h-6 text-sage-600 mx-auto"></i>
+                <div class="text-xs font-bold text-warmdark">Upload Chat Screenshot (Optional)</div>
+                <p class="text-[10px] text-warmdark/60">Multimodal AI deciphers text message threads visually.</p>
+                <button type="button" onclick="simulateScreenshotUpload()" class="bg-white border border-sage-300 text-warmdark text-xs font-semibold px-4 py-1.5 rounded-lg shadow-sm hover:bg-sage-100">
+                  Select Demo Screenshot
+                </button>
+                <div id="screenshotPreviewName" class="text-[10px] text-emerald-700 font-bold hidden">✓ Screenshot loaded: argument_text_thread.png</div>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-warmdark mb-1">Partner's Last Message</label>
+                <textarea id="realtimePartnerMsg" rows="2" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 outline-none">"Fine. Don't worry about it. I'll just do everything myself like I always do."</textarea>
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-warmdark mb-1">Context & What Triggered It</label>
+                <input id="realtimeContext" type="text" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 outline-none" value="Discussing who is picking up the kids from practice." />
+              </div>
+
+              <div>
+                <label class="block text-xs font-semibold text-warmdark mb-1">Your Emotion Words</label>
+                <input id="realtimeEmotions" type="text" class="w-full text-xs p-2.5 rounded-xl border border-sage-300 outline-none" value="Guilt, defensive, exhausted, misunderstood" />
+              </div>
+
+              <button onclick="runRealtimeHelp()" class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3 rounded-xl text-xs shadow-md flex items-center justify-center gap-2">
+                <i data-lucide="zap" class="w-4 h-4"></i> Generate 3 De-Escalating Responses
+              </button>
+            </div>
+
+            <!-- 3 Options Output -->
+            <div class="lg:col-span-7 space-y-4">
+              <span class="text-xs font-bold uppercase tracking-wider text-sage-900 flex items-center gap-1.5">
+                <i data-lucide="sparkles" class="w-4 h-4 text-clay-600"></i> 3 Non-Blaming Response Options
+              </span>
+
+              <div id="realtimeOptionsList" class="space-y-3">
                 
-                <!-- Lens 1: The Neurodivergent Brain Reality -->
-                <div class="p-4 bg-white rounded-2xl border border-sage-200 shadow-sm space-y-1.5">
-                  <div class="flex items-center gap-2 text-xs font-bold text-sage-800">
-                    <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
-                    <span>1. What’s Happening In The Neurodivergent Brain (ADHD / Executive Deficit)</span>
-                  </div>
-                  <p id="neuroBrainReality" class="text-xs text-warmdark/80 leading-relaxed pl-4">
-                    This is <strong>executive dysfunction & working memory drop</strong>, not lack of love. To an ADHD brain, tasks without immediate dopamine urgency vanish the moment attention shifts. Calling this 'lack of love' sends the ADHD brain into shame and defensive paralysis.
-                  </p>
-                </div>
-
-                <!-- Lens 2: The Partner's Emotional Impact -->
-                <div class="p-4 bg-white rounded-2xl border border-amber-200 shadow-sm space-y-1.5">
-                  <div class="flex items-center gap-2 text-xs font-bold text-amber-800">
-                    <span class="w-2 h-2 rounded-full bg-amber-500"></span>
-                    <span>2. The Partner’s Legitimate Feeling (Parent-Child Dynamic Risk)</span>
-                  </div>
-                  <p id="neuroPartnerImpact" class="text-xs text-warmdark/80 leading-relaxed pl-4">
-                    The partner experiences repeated cognitive overload and feels like an unappreciated parent rather than an equal partner.
-                  </p>
-                </div>
-
-                <!-- Lens 3: The Dr. Liz Bridge Script -->
-                <div class="p-4 bg-white rounded-2xl border-2 border-clay-300 shadow-sm space-y-2">
+                <div class="p-4 bg-white rounded-2xl border border-sage-200 shadow-sm space-y-1 hover:border-clay-400 transition-all cursor-pointer">
                   <div class="flex items-center justify-between">
-                    <div class="flex items-center gap-2 text-xs font-bold text-clay-700">
-                      <i data-lucide="sparkles" class="w-3.5 h-3.5 text-clay-600"></i>
-                      <span>3. Dr. Liz’s "Neuro-Bridge" Reconnect Script</span>
-                    </div>
-                    <span class="text-[10px] text-clay-600 font-semibold bg-clay-100 px-2 py-0.5 rounded">Say This Instead</span>
+                    <span class="text-[11px] font-bold text-emerald-700 bg-emerald-50 px-2.5 py-0.5 rounded-full">Option 1: Vulnerable De-escalation</span>
+                    <button class="text-xs text-clay-600 hover:text-clay-800 font-semibold flex items-center gap-1" onclick="copyText(this)">Copy Script</button>
                   </div>
-                  <p id="neuroBridgeScript" class="text-xs sm:text-sm font-serif-luxury font-semibold text-warmdark italic leading-relaxed pl-4">
-                    "I know you love me and didn't forget on purpose, but when this task dropped, it made me feel alone with the house stress. Can we sit down right now for 2 minutes and make the call together so you don't have to carry it alone?"
+                  <p class="text-xs sm:text-sm font-serif-luxury font-medium text-warmdark italic">
+                    "I hear how tired and stressed you are, and I really don't want you to feel alone in this. I want to help. Can I take pickup duty today so you have time to breathe?"
+                  </p>
+                </div>
+
+                <div class="p-4 bg-white rounded-2xl border border-sage-200 shadow-sm space-y-1 hover:border-clay-400 transition-all cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <span class="text-[11px] font-bold text-amber-700 bg-amber-50 px-2.5 py-0.5 rounded-full">Option 2: Boundary with Emotional Reassurance</span>
+                    <button class="text-xs text-clay-600 hover:text-clay-800 font-semibold flex items-center gap-1" onclick="copyText(this)">Copy Script</button>
+                  </div>
+                  <p class="text-xs sm:text-sm font-serif-luxury font-medium text-warmdark italic">
+                    "I love you and I care about our family, but it hurts when you say I never help. I'm tied up with a work call until 5:15 PM, but I can handle pickup right after that."
+                  </p>
+                </div>
+
+                <div class="p-4 bg-white rounded-2xl border border-sage-200 shadow-sm space-y-1 hover:border-clay-400 transition-all cursor-pointer">
+                  <div class="flex items-center justify-between">
+                    <span class="text-[11px] font-bold text-clay-700 bg-clay-50 px-2.5 py-0.5 rounded-full">Option 3: Time-Out & Nervous System Reset</span>
+                    <button class="text-xs text-clay-600 hover:text-clay-800 font-semibold flex items-center gap-1" onclick="copyText(this)">Copy Script</button>
+                  </div>
+                  <p class="text-xs sm:text-sm font-serif-luxury font-medium text-warmdark italic">
+                    "I notice we're both getting tense and defensive over text. Can we pause for 10 minutes and talk over the phone? I want to make sure we're on the same team."
                   </p>
                 </div>
 
               </div>
             </div>
 
-            <!-- Action Footer -->
-            <div class="pt-4 border-t border-sage-200 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs">
-              <span class="text-warmdark/70">Need dedicated neuro-affirming coaching for your relationship?</span>
-              <button onclick="openModal('consultModal')" class="bg-sage-800 hover:bg-black text-white font-semibold px-4 py-2 rounded-full transition-colors flex items-center gap-1.5">
-                <span>Book Neuro-Inclusive Consult</span>
-                <i data-lucide="arrow-right" class="w-3.5 h-3.5"></i>
-              </button>
+          </div>
+        </div>
+
+        <!-- =================== TAB 3: AUDIO CONFLICT DIARIZATION =================== -->
+        <div id="suiteTab-audio" class="hidden p-6 sm:p-8 space-y-6">
+          <div class="flex flex-col md:flex-row md:items-center justify-between gap-4 pb-4 border-b border-sage-100">
+            <div>
+              <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Audio Conflict Recording & Diarization</h3>
+              <p class="text-xs text-warmdark/60">Automated Speaker A vs Speaker B diarization with stress levels & real-time rewrites.</p>
+            </div>
+            <div class="flex items-center gap-2">
+              <span class="text-xs font-semibold text-rose-700 bg-rose-50 border border-rose-200 px-3 py-1 rounded-full flex items-center gap-1.5">
+                <span class="w-2 h-2 rounded-full bg-rose-600 animate-pulse"></span> Recorded 1m 24s Session
+              </span>
+            </div>
+          </div>
+
+          <!-- Diarization Timeline -->
+          <div class="space-y-4">
+            
+            <!-- Audio Segment 1 (Speaker A) -->
+            <div class="p-4 rounded-2xl border border-slate-200 bg-slate-50/70 mr-12 space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="bg-slate-700 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">Speaker A (0:04 - 0:18)</span>
+                  <span class="text-[10px] text-amber-700 bg-amber-100 font-semibold px-2 py-0.5 rounded-full">Stress: Medium</span>
+                </div>
+                <span class="text-xs text-warmdark/50">Pitch Elevation: +18Hz</span>
+              </div>
+              <p class="text-xs sm:text-sm text-warmdark font-medium leading-relaxed">
+                "I've asked you three times to take care of this and nothing happens. I feel like you just tune me out the second you sit on the couch."
+              </p>
+              <div class="pt-2 border-t border-slate-200/80 text-xs text-emerald-800 bg-emerald-50/80 p-2.5 rounded-xl">
+                <strong>Suggested Repair Script:</strong> "I'm feeling really anxious about this task falling through. Could you let me know when you'll be able to get to it today?"
+              </div>
             </div>
 
+            <!-- Audio Segment 2 (Speaker B) -->
+            <div class="p-4 rounded-2xl border border-clay-200 bg-clay-50/70 ml-12 space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="bg-clay-600 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">Speaker B (0:19 - 0:34)</span>
+                  <span class="text-[10px] text-rose-700 bg-rose-100 font-semibold px-2 py-0.5 rounded-full">Stress: High (Defensive)</span>
+                </div>
+                <span class="text-xs text-warmdark/50">Volume Spike: +6dB</span>
+              </div>
+              <p class="text-xs sm:text-sm text-warmdark font-medium leading-relaxed">
+                "I just walked through the front door! Can I have five seconds to take off my shoes before you start interrogating me?!"
+              </p>
+              <div class="pt-2 border-t border-clay-200/80 text-xs text-emerald-800 bg-emerald-50/80 p-2.5 rounded-xl">
+                <strong>Suggested Repair Script:</strong> "My brain is on total overload from work right now. I want to help with this, but can I have 15 minutes to regulate first?"
+              </div>
+            </div>
+
+            <!-- Audio Segment 3 (Speaker A - Breakdown Attribution) -->
+            <div class="p-4 rounded-2xl border-2 border-rose-200 bg-rose-50/60 mr-12 space-y-2">
+              <div class="flex items-center justify-between">
+                <div class="flex items-center gap-2">
+                  <span class="bg-rose-700 text-white text-[10px] font-bold uppercase px-2 py-0.5 rounded">Speaker A (0:35 - 0:52)</span>
+                  <span class="text-[10px] text-rose-800 bg-rose-200 font-bold px-2 py-0.5 rounded-full">⚡ Breakdown Point</span>
+                </div>
+                <span class="text-xs text-rose-800 font-bold">Hostility Escalation</span>
+              </div>
+              <p class="text-xs sm:text-sm text-warmdark font-medium leading-relaxed">
+                "Of course, it's always about your needs! Why do I even bother trying to talk to you?"
+              </p>
+            </div>
+
+          </div>
+
+          <div class="p-4 bg-white rounded-2xl border border-sage-200 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs">
+            <span class="text-warmdark/70">Want personalized coaching on your couple's audio arguments?</span>
+            <button onclick="openModal('consultModal')" class="bg-clay-600 hover:bg-clay-700 text-white font-semibold px-5 py-2.5 rounded-full shadow transition-all">
+              Schedule Free Consult with Dr. Liz
+            </button>
           </div>
 
         </div>
@@ -422,139 +579,17 @@
     </div>
   </section>
 
-  <!-- Interactive AI Feature #1: The General De-escalation Communication Translator -->
-  <section id="ai-translator" class="py-20 bg-gradient-to-b from-white to-clay-100/60 border-b border-clay-200/80">
-    <div class="max-w-5xl mx-auto px-6">
-      
-      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
-        <div class="inline-flex items-center gap-2 bg-clay-200/80 text-clay-800 text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
-          <i data-lucide="sparkles" class="w-3.5 h-3.5 text-clay-600"></i>
-          General De-escalation Translator
-        </div>
-        <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
-          Turn Heated Words Into Heart Connection
-        </h2>
-        <p class="text-sm sm:text-base text-warmdark/70">
-          When we're hurt or exhausted, we speak in blame. Type what you feel like blurting out below, and Dr. Liz’s clinical framework will translate it into a vulnerable statement that pulls your partner close instead of pushing them away.
-        </p>
-      </div>
-
-      <!-- The Interactive Translator Widget -->
-      <div class="bg-white rounded-3xl shadow-xl border border-clay-200 overflow-hidden">
-        
-        <!-- Preset Prompt Chips -->
-        <div class="p-4 sm:p-5 bg-clay-50/80 border-b border-clay-200/60 flex flex-wrap items-center gap-2">
-          <span class="text-xs font-semibold text-warmdark/60 mr-1">Try common scenarios:</span>
-          <button onclick="setTranslatorPreset(0)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
-            "You never help around the house"
-          </button>
-          <button onclick="setTranslatorPreset(1)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
-            "You care more about your phone than me"
-          </button>
-          <button onclick="setTranslatorPreset(2)" class="text-xs bg-white hover:bg-clay-200/60 text-warmdark border border-clay-200 px-3 py-1.5 rounded-full transition-all">
-            "Why do you always shut down?"
-          </button>
-        </div>
-
-        <!-- Input / Output Grid -->
-        <div class="grid grid-cols-1 md:grid-cols-2 divide-y md:divide-y-0 md:divide-x divide-clay-200">
-          
-          <!-- Left: User's Frustrated Words -->
-          <div class="p-6 sm:p-8 space-y-4 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-2">
-                <label class="text-xs font-bold uppercase tracking-wider text-rose-600 flex items-center gap-1.5">
-                  <i data-lucide="flame" class="w-4 h-4"></i> What You Feel Like Saying (The Hurt / Blame)
-                </label>
-                <span class="text-[11px] text-warmdark/40 font-mono" id="charCount">72 chars</span>
-              </div>
-              <textarea 
-                id="rawConflictInput" 
-                rows="4" 
-                class="w-full text-sm sm:text-base p-4 rounded-xl border border-clay-300 focus:border-clay-600 focus:ring-2 focus:ring-clay-200 outline-none resize-none transition-all"
-                placeholder="E.g. 'You always ignore me after work and it feels like I don't even matter to you!'"
-              >You always ignore me after work and it feels like I don't even matter to you!</textarea>
-            </div>
-
-            <div class="pt-2">
-              <button 
-                onclick="runDeescalationTranslation()" 
-                id="translateBtn"
-                class="w-full bg-clay-600 hover:bg-clay-700 text-white font-semibold py-3 px-5 rounded-xl shadow-md transition-all flex items-center justify-center gap-2 text-sm"
-              >
-                <i data-lucide="sparkles" class="w-4 h-4"></i>
-                <span>Translate with Dr. Liz’s Method</span>
-              </button>
-            </div>
-          </div>
-
-          <!-- Right: Dr. Liz's Clinical Reconnect Translation -->
-          <div class="p-6 sm:p-8 space-y-5 bg-clay-50/50 flex flex-col justify-between">
-            <div>
-              <div class="flex items-center justify-between mb-3">
-                <label class="text-xs font-bold uppercase tracking-wider text-emerald-700 flex items-center gap-1.5">
-                  <i data-lucide="heart" class="w-4 h-4"></i> Dr. Liz’s "Smart Restart" Reconnect Script
-                </label>
-                <span class="text-[10px] bg-emerald-100 text-emerald-800 font-bold px-2 py-0.5 rounded-full">Non-Violent & Vulnerable</span>
-              </div>
-
-              <!-- Loading spinner simulator -->
-              <div id="translateLoading" class="hidden py-8 text-center space-y-2">
-                <i data-lucide="loader-2" class="w-6 h-6 text-clay-600 animate-spin mx-auto"></i>
-                <div class="text-xs text-warmdark/60 font-medium">Applying Dr. Liz’s 38-year de-escalation psychology...</div>
-              </div>
-
-              <!-- Translation Output -->
-              <div id="translateResult" class="space-y-4">
-                <div class="p-4 bg-white rounded-xl border border-clay-200 shadow-sm relative">
-                  <i data-lucide="quote" class="w-5 h-5 text-clay-400 absolute top-3 right-3 opacity-40"></i>
-                  <p id="translatedQuote" class="text-warmdark font-medium text-sm sm:text-base italic leading-relaxed">
-                    "I’ve really missed you today and I crave some quiet connection with you. Could we take 15 minutes together after dinner to just be together without our screens?"
-                  </p>
-                </div>
-
-                <!-- Clinical Insight Breakdown -->
-                <div class="space-y-2 text-xs text-warmdark/80 bg-white/70 p-3.5 rounded-xl border border-clay-200/80">
-                  <div class="flex items-start gap-2">
-                    <span class="font-bold text-clay-700 whitespace-nowrap">The Underlying Need:</span>
-                    <span id="underlyingNeed" class="text-warmdark/70">Longing for emotional safety, feeling seen and prioritized.</span>
-                  </div>
-                  <div class="flex items-start gap-2">
-                    <span class="font-bold text-emerald-700 whitespace-nowrap">Why It Works:</span>
-                    <span id="whyItWorks" class="text-warmdark/70">Replaces the trigger word "always" with vulnerable desire, removing partner defensiveness.</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Call to Action Mini Banner -->
-            <div class="pt-4 border-t border-clay-200/80 flex items-center justify-between text-xs">
-              <span class="text-warmdark/60">Need guidance on your specific relationship dynamic?</span>
-              <button onclick="openModal('consultModal')" class="font-bold text-clay-700 hover:text-clay-900 underline">
-                Ask Dr. Liz In A Free Call &rarr;
-              </button>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </div>
-  </section>
-
-  <!-- Interactive AI Feature #3: The 60-Second Relationship Clarity Pulse -->
+  <!-- Interactive AI Feature #2: The Conflict Compass (Nervous System Checkup) -->
   <section id="clarity-pulse" class="py-20 bg-[#FBF9F5]">
     <div class="max-w-4xl mx-auto px-6">
       
       <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
         <div class="inline-flex items-center gap-2 bg-sage-100 text-sage-800 text-xs font-bold px-3.5 py-1.5 rounded-full tracking-wider uppercase">
-          <i data-lucide="activity" class="w-3.5 h-3.5 text-sage-700"></i>
-          Interactive Relationship Health Checkup
+          <i data-lucide="compass" class="w-3.5 h-3.5 text-sage-700"></i>
+          The Conflict Compass: Nervous System Health Checkup
         </div>
         <h2 class="font-serif-luxury text-3xl sm:text-4xl lg:text-5xl font-bold text-warmdark">
-          Where Is Your Relationship Right Now?
+          Where Is Your Couple Nervous System?
         </h2>
         <p class="text-sm sm:text-base text-warmdark/70">
           Answer 4 simple questions to identify your couple’s current pattern and receive Dr. Liz’s recommended immediate step.
@@ -926,13 +961,13 @@
             <h3 class="font-serif-luxury text-2xl font-bold text-warmdark">Smart Restart VIP Coaching</h3>
             <div class="font-serif-luxury text-3xl font-bold text-warmdark">By Application</div>
             <p class="text-xs text-warmdark/70 leading-relaxed">
-              Intensive, personalized private coaching with Dr. Liz. Includes weekly deep-dive strategy calls and direct text access.
+              Intensive, personalized private coaching with Dr. Liz. Includes weekly deep-dive strategy calls, trauma-aware loop tracking, and direct text access.
             </p>
             <ul class="space-y-2.5 text-xs text-warmdark/80 pt-4 border-t border-clay-100">
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> 1:1 or Couple Live Coaching Calls</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Direct Private Text Support With Dr. Liz</li>
               <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Neuro-Affirming De-escalation & Rebuild</li>
-              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Lifetime Access to All Audio Courses</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-600"></i> Full Access to Co-Regulate AI Diagnostics</li>
             </ul>
           </div>
           <div class="pt-8">
@@ -1078,7 +1113,7 @@
       </div>
       <div class="flex items-center gap-6">
         <a href="#about" class="hover:text-white transition-colors">About</a>
-        <a href="#neuro-ai" class="hover:text-white transition-colors">Neurodivergent AI</a>
+        <a href="#clinical-ai-suite" class="hover:text-white transition-colors">Co-Regulate Suite</a>
         <a href="#method" class="hover:text-white transition-colors">Method</a>
         <a href="#book" class="hover:text-white transition-colors">The Book</a>
         <a href="#coaching" class="hover:text-white transition-colors">VIP Coaching</a>
@@ -1093,7 +1128,6 @@
 
   <!-- FLOATING AI ASSISTANT: Dr. Liz's 24/7 Connection Concierge -->
   <div class="fixed bottom-6 right-6 z-50">
-    <!-- Chat Trigger Pill -->
     <button 
       id="chatToggleBtn" 
       onclick="toggleChatWidget()" 
@@ -1111,7 +1145,6 @@
       id="chatWindow" 
       class="hidden absolute bottom-16 right-0 w-[92vw] sm:w-96 max-h-[550px] bg-white rounded-3xl shadow-2xl border border-clay-300 flex flex-col overflow-hidden transition-all duration-300"
     >
-      <!-- Chat Header -->
       <div class="bg-warmdark p-4 text-white flex items-center justify-between">
         <div class="flex items-center gap-3">
           <div class="relative w-9 h-9 rounded-full overflow-hidden bg-clay-200 border border-white/20">
@@ -1134,36 +1167,32 @@
         </button>
       </div>
 
-      <!-- Ethical Therapy Guardrail Notice -->
       <div class="bg-amber-50 px-3 py-1.5 border-b border-amber-200 text-[10px] text-amber-800 flex items-center gap-1.5">
         <i data-lucide="info" class="w-3.5 h-3.5 text-amber-600 shrink-0"></i>
         <span>AI Educational Assistant · For emergencies or medical advice call 988.</span>
       </div>
 
-      <!-- Messages Stream -->
       <div id="chatMessages" class="flex-1 p-4 overflow-y-auto space-y-3 max-h-80 text-xs">
         <div class="flex items-start gap-2">
           <div class="w-6 h-6 rounded-full bg-clay-200 text-clay-800 flex items-center justify-center font-bold text-[10px] shrink-0">L</div>
           <div class="bg-clay-100/80 p-3 rounded-2xl rounded-tl-none text-warmdark/90 leading-relaxed max-w-[85%]">
-            Hello! I’m Dr. Liz’s AI Connection Concierge. Are you looking to improve communication, navigate neurodivergent dynamics (like ADHD or Autism in marriage), or learn about coaching?
+            Hello! I’m Dr. Liz’s AI Connection Concierge. How can I support your relationship today?
           </div>
         </div>
       </div>
 
-      <!-- Quick Suggested Questions -->
       <div class="p-2 bg-clay-50 border-t border-clay-200/80 flex flex-wrap gap-1.5">
-        <button onclick="sendQuickMessage('How does ADHD affect marriage?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
-          How ADHD affects marriage?
+        <button onclick="sendQuickMessage('How does ADHD affect communication in marriage?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
+          ADHD in marriage?
         </button>
-        <button onclick="sendQuickMessage('My partner won\'t do therapy, what can I do?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
-          Partner won't do therapy?
+        <button onclick="sendQuickMessage('What is Weaponized Neurodivergence?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
+          Weaponized Neurodivergence?
         </button>
         <button onclick="sendQuickMessage('How do I book a free consult?')" class="text-[10px] bg-white border border-clay-200 px-2 py-1 rounded-full text-warmdark/80 hover:bg-clay-100">
           Book free consult
         </button>
       </div>
 
-      <!-- Chat Input Field -->
       <div class="p-3 bg-white border-t border-clay-200 flex items-center gap-2">
         <input 
           id="chatInput" 
@@ -1205,7 +1234,7 @@
           <input type="email" required placeholder="jane@example.com" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
         </div>
         <div>
-          <label class="block font-semibold text-warmdark mb-1">Phone Number (For Calendar Reminder)</label>
+          <label class="block font-semibold text-warmdark mb-1">Phone Number</label>
           <input type="tel" required placeholder="(555) 123-4567" class="w-full p-3 rounded-xl border border-clay-300 focus:border-clay-600 outline-none" />
         </div>
         <div>
@@ -1294,9 +1323,6 @@
         <p>
           When couples tell me, 'We just fight constantly,' I look beneath the surface. Anger is almost never the primary emotion. Anger is the bodyguard of grief. Beneath 'Why didn’t you take out the trash?' is almost always: 'Do you still see me? Do I still matter to you?'"
         </p>
-        <div class="p-4 bg-clay-50 rounded-xl border border-clay-200 font-sans text-xs">
-          <strong>Key Takeaway from Step 1:</strong> Before you can fix a marriage, you must stop the bleeding. In the Smart Restart, we don't start with solutions—we start with emotional de-escalation.
-        </div>
       </div>
 
       <div class="pt-4 border-t border-clay-200 mt-4 flex items-center justify-between">
@@ -1309,113 +1335,133 @@
     </div>
   </div>
 
-  <!-- SCRIPTS & INTERACTIVITY LOGIC -->
+  <!-- JAVASCRIPT LOGIC -->
   <script>
-    // Initialize Lucide Icons
     lucide.createIcons();
 
-    // Modal Control Functions
-    function openModal(id) {
-      document.getElementById(id).classList.remove('hidden');
-    }
-    function closeModal(id) {
-      document.getElementById(id).classList.add('hidden');
+    function openModal(id) { document.getElementById(id).classList.remove('hidden'); }
+    function closeModal(id) { document.getElementById(id).classList.add('hidden'); }
+
+    // Suite Tab Switching
+    function switchSuiteTab(tab) {
+      document.querySelectorAll('[id^="suiteTab-"]').forEach(el => el.classList.add('hidden'));
+      document.querySelectorAll('[id^="tabBtn-"]').forEach(el => el.classList.remove('tool-tab-active'));
+
+      document.getElementById(`suiteTab-${tab}`).classList.remove('hidden');
+      document.getElementById(`tabBtn-${tab}`).classList.add('tool-tab-active');
+      lucide.createIcons();
     }
 
-    // ========================================================
-    // NEURODIVERGENT AI CONVERSATION ANALYZER DATA & LOGIC
-    // ========================================================
-    const neuroScenarios = [
+    // ADHD Mode Toggle
+    let isAdhdMode = true;
+    function toggleAdhdMode() {
+      isAdhdMode = !isAdhdMode;
+      const btn = document.getElementById('adhdToggleBtn');
+      const circle = document.getElementById('adhdToggleCircle');
+      if (isAdhdMode) {
+        btn.classList.remove('bg-slate-300');
+        btn.classList.add('bg-emerald-600');
+        circle.classList.remove('left-0.5');
+        circle.classList.add('right-0.5');
+      } else {
+        btn.classList.remove('bg-emerald-600');
+        btn.classList.add('bg-slate-300');
+        circle.classList.remove('right-0.5');
+        circle.classList.add('left-0.5');
+      }
+    }
+
+    // Incident Presets
+    const incidentPresets = [
       {
-        dynamic: "adhd-nt",
-        badge: "ADHD: Task Paralysis & Working Memory",
-        raw: "You forgot to call the contractor again. If you loved me, you wouldn't let everything fall on my shoulders.",
-        brain: "This is <strong>executive dysfunction & working memory drop</strong>, not lack of love. To an ADHD brain, tasks without immediate dopamine urgency vanish the moment attention shifts. Calling this 'lack of love' sends the ADHD brain into shame and defensive paralysis.",
-        partner: "The non-ADHD partner feels exhausted by continuous cognitive load and starts feeling like an unappreciated parent rather than an equal partner.",
-        script: "\"I know you love me and didn't forget on purpose, but when this task dropped, it made me feel alone with the house stress. Can we sit down right now for 2 minutes and make the call together so you don't have to carry it alone?\""
+        cat: 'chore/logistics',
+        summary: "Partner forgot to make an urgent contractor phone call despite promising 3 times.",
+        persp: "Person A blurted an interruption while Person B was talking about work, which triggered Person B to yell 'You never listen to me!' and storm out.",
+        weapon: "Person B used Person A's neurological ADHD blurt/interruption as a moral justification to escalate into verbal hostility and walk out, bypassing constructive dialogue.",
+        breakdown: "The conversation failed at second 42 when Person B labeled neurological processing speed as 'intentional disrespect,' triggering fight-or-flight defensiveness.",
+        accA: "Acknowledge that impulsive blurting disrupts conversation rhythm; commit to taking notes during heated moments.",
+        accB: "Stop using partner's ADHD traits to justify explosive reactions; regulate nervous system before addressing task boundaries.",
+        repA: "\"I'm sorry I interrupted you while you were talking about work. My brain was racing, but I want to give you my full attention. Please continue.\"",
+        repB: "\"I was already overwhelmed and I overreacted when you spoke up. I know you weren't trying to disrespect me. Thank you for listening.\""
       },
       {
-        dynamic: "asd-nt",
-        badge: "Autism / Expressive Disconnect: Flat Affect",
-        raw: "I was crying and pouring my heart out, and you just stared at me blankly like a robot without empathy!",
-        brain: "In an autistic or high-sensory processing brain, intense emotional crying triggers severe internal overwhelm. The 'blank stare' is actually <strong>emotional buffering & regulation</strong>, not indifference. Deep feeling is occurring without mirror-neuron facial expressions.",
-        partner: "The expressive partner relies on visible facial feedback to feel emotionally heard and interpreted the stillness as icy cold abandonment.",
-        script: "\"I see that you're taking this in and might be feeling flooded. I don't need you to fix this right now; I just need to know you hear me. Could you just hold my hand while I breathe?\""
+        cat: 'trust concern',
+        summary: "Partner gave a blank stare while I was crying about feeling lonely.",
+        persp: "Person A was pouring their heart out; Person B had flat affect and went silent. Person A accused Person B of having zero empathy.",
+        weapon: "Person A weaponized Person B's autistic flat affect / emotional buffering, labeling internal freeze-state as malicious emotional neglect.",
+        breakdown: "Communication stalled when Person B experienced sensory shutdown from intense emotional crying, and Person A interpreted silent regulation as abandonment.",
+        accA: "Recognize that lack of mirrored facial expressions does not mean lack of care; ask for non-verbal connection like hand-holding.",
+        accB: "Communicate verbal reassurance ('I hear you, my brain is buffering') so partner does not assume detachment.",
+        repA: "\"I see that you're taking this in and might be feeling flooded. I don't need you to fix this; I just need to know you're with me.\"",
+        repB: "\"I care deeply about how you're feeling. I went quiet because I was flooded, not because I don't love you.\""
       },
       {
-        dynamic: "rsd",
-        badge: "Rejection Sensitive Dysphoria (RSD)",
-        raw: "I asked for 20 minutes of quiet when I walked in, and you blew up saying I don't love you.",
-        brain: "When a partner asks for space, an RSD-wired nervous system interprets that request as a <strong>visceral physical threat of sudden abandonment and total rejection</strong>, causing an immediate fight-or-flight adrenaline surge.",
-        partner: "The returning partner needed decompression after work and felt punished and walk-on-eggshells for stating a simple biological sensory need.",
-        script: "\"I love you so much, you are my favorite person, and nothing is wrong between us. My nervous system is just on 100% overload from work. I'm going to take 20 minutes to recharge, and then I can't wait to give you a big hug and hear about your day.\""
-      },
-      {
-        dynamic: "double-nd",
-        badge: "Double Neurodivergent: Sensory Clash",
-        raw: "Your fidgeting and clicking pens is driving me insane, why can't you just sit still?!",
-        brain: "One partner uses physical fidgeting/stimming to regulate attention and nervous system calm; the other partner has misophonia or sensory audio overload where that exact clicking sounds deafening.",
-        partner: "Neither is 'wrong'; two valid neurological needs are in direct physical collision.",
-        script: "\"My sensory tank is completely in the red right now and repetitive sounds are hurting my brain. I know you need to fidget—could we switch to a quiet squeeze tool, or can I put on my noise-canceling headphones while we sit together?\""
+        cat: 'boundary issue',
+        summary: "Requested 20 minutes of quiet decompression after work; partner felt rejected.",
+        persp: "Person A came home after a 9-hour sensory-loaded shift and asked for 20 minutes alone. Person B felt sudden abandonment (RSD trigger) and lashed out.",
+        weapon: "Rejection Sensitive Dysphoria (RSD) triggered Person B into perceiving a healthy nervous system boundary as marital rejection.",
+        breakdown: "Boundary was communicated abruptly without affection reassurance, sending Person B's attachment alarm bells ringing.",
+        accA: "Pre-anchor partner with warmth before stepping away for quiet regulation ('I love you, you are my favorite person, I just need 15 min to reset').",
+        accB: "Practice self-soothing during partner's quiet window; recognize boundary is for nervous system health, not a verdict on the relationship.",
+        repA: "\"I love you so much and I can't wait to hear about your day. My battery is at 2%, so I'm taking 15 minutes to reset my head.\"",
+        repB: "\"Thank you for telling me what you need. I'll give you space to recharge and see you in 15 minutes.\""
       }
     ];
 
-    let currentNeuroIndex = 0;
-
-    function setNeuroDynamic(type) {
-      document.querySelectorAll('#neuroDynamicChips button').forEach(b => b.classList.remove('tab-active'));
-      const activeBtn = document.getElementById(`chip-${type}`);
-      if (activeBtn) activeBtn.classList.add('tab-active');
-
-      const found = neuroScenarios.find(s => s.dynamic === type);
-      if (found) {
-        currentNeuroIndex = neuroScenarios.indexOf(found);
-        loadNeuroScenario(currentNeuroIndex);
-      }
+    function loadIncidentPreset(idx) {
+      const p = incidentPresets[idx];
+      document.getElementById('incidentCategory').value = p.cat;
+      document.getElementById('incidentSummaryInput').value = p.summary;
+      document.getElementById('incidentPerspectiveInput').value = p.persp;
+      document.getElementById('weaponizedText').innerText = p.weapon;
+      document.getElementById('breakdownText').innerText = p.breakdown;
+      document.getElementById('accountA').innerText = p.accA;
+      document.getElementById('accountB').innerText = p.accB;
+      document.getElementById('repairA').innerText = p.repA;
+      document.getElementById('repairB').innerText = p.repB;
     }
 
-    function loadNeuroScenario(index) {
-      currentNeuroIndex = index;
-      const s = neuroScenarios[index];
-      document.getElementById('neuroScenarioBadge').innerText = s.badge;
-      document.getElementById('neuroRawText').value = s.raw;
-      
-      // Update active chip
-      document.querySelectorAll('#neuroDynamicChips button').forEach(b => b.classList.remove('tab-active'));
-      const chip = document.getElementById(`chip-${s.dynamic}`);
-      if (chip) chip.classList.add('tab-active');
-
-      runNeuroAnalysis(s);
-    }
-
-    function runNeuroAnalysis(customScenario = null) {
-      const s = customScenario || neuroScenarios[currentNeuroIndex];
-      const resultContainer = document.getElementById('neuroResultCards');
-      const loader = document.getElementById('neuroLoading');
-
-      resultContainer.classList.add('hidden');
-      loader.classList.remove('hidden');
-
+    function runIncidentAnalysis() {
+      // Small visual pulse
+      const card = document.querySelector('#suiteTab-incident .lg\\:col-span-7');
+      card.classList.add('opacity-50');
       setTimeout(() => {
-        loader.classList.add('hidden');
-        resultContainer.classList.remove('hidden');
-
-        document.getElementById('neuroBrainReality').innerHTML = s.brain;
-        document.getElementById('neuroPartnerImpact').innerText = s.partner;
-        document.getElementById('neuroBridgeScript').innerText = s.script;
-
-        lucide.createIcons();
-      }, 550);
+        card.classList.remove('opacity-50');
+      }, 300);
     }
 
-    // Audio Snippet Simulator
+    // Real-Time Turn Assistant
+    function simulateScreenshotUpload() {
+      const badge = document.getElementById('screenshotPreviewName');
+      badge.classList.remove('hidden');
+      document.getElementById('realtimePartnerMsg').value = "Look, if you don't even care enough to text me back when you're late, why are we even doing this?";
+      document.getElementById('realtimeContext').value = "Stuck in traffic after late work meeting without charging cable.";
+      document.getElementById('realtimeEmotions').value = "Panicked, defensive, frustrated by traffic";
+    }
+
+    function runRealtimeHelp() {
+      const list = document.getElementById('realtimeOptionsList');
+      list.classList.add('opacity-40');
+      setTimeout(() => {
+        list.classList.remove('opacity-40');
+      }, 350);
+    }
+
+    function copyText(btn) {
+      const p = btn.closest('div').parentElement.querySelector('p').innerText;
+      navigator.clipboard.writeText(p);
+      const original = btn.innerText;
+      btn.innerText = "✓ Copied!";
+      setTimeout(() => { btn.innerText = original; }, 2000);
+    }
+
+    // Audio preview
     let isPlayingAudio = false;
     function toggleAudioPreview() {
       isPlayingAudio = !isPlayingAudio;
       const btnIcon = document.getElementById('audioIcon');
       const text = document.getElementById('audioStatusText');
       const wave = document.getElementById('audioWaveform');
-      
       if (isPlayingAudio) {
         btnIcon.setAttribute('data-lucide', 'pause');
         text.innerText = "Playing Dr. Liz's welcome audio clip...";
@@ -1430,68 +1476,15 @@
       lucide.createIcons();
     }
 
-    // General De-escalation Translator
-    const presets = [
-      {
-        raw: "You never help around the house and it feels like you expect me to be your maid!",
-        quote: "\"I’ve been feeling really overwhelmed trying to balance everything at home lately. It would make me feel so supported and loved if we could tackle dinner cleanup together tonight as a team.\"",
-        need: "Craving shared partnership, feeling overburdened and unseen.",
-        works: "Removes accusatory 'maid' and 'never' triggers; replaces them with vulnerability and an actionable team request."
-      },
-      {
-        raw: "You care way more about your phone and scrolling social media than you care about talking to me.",
-        quote: "\"I really miss the way we used to talk and laugh together in the evenings. Can we make a date tonight to put our phones away for 30 minutes and just hang out on the couch?\"",
-        need: "Desire for genuine emotional connection and focused partner attention.",
-        works: "Expresses a fond memory of intimacy rather than policing screen habits, sparking warmth instead of shame."
-      },
-      {
-        raw: "Why do you always shut down and give me the silent treatment whenever things get hard?!",
-        quote: "\"I notice when things get tense, we both retreat. It scares me when there's silence between us because I love you and want us to be okay. Can we take a 10-minute pause and come back when we're calm?\"",
-        need: "Fear of abandonment / emotional withdrawal; longing for emotional safety.",
-        works: "Honors the partner's need to regulate without letting the conflict linger into prolonged resentment."
-      }
-    ];
-
-    function setTranslatorPreset(index) {
-      const p = presets[index];
-      document.getElementById('rawConflictInput').value = p.raw;
-      document.getElementById('charCount').innerText = `${p.raw.length} chars`;
-      runDeescalationTranslation(p);
-    }
-
-    function runDeescalationTranslation(presetData = null) {
-      const rawText = document.getElementById('rawConflictInput').value.trim();
-      if (!rawText) return;
-
-      document.getElementById('translateResult').classList.add('hidden');
-      document.getElementById('translateLoading').classList.remove('hidden');
-
-      setTimeout(() => {
-        document.getElementById('translateLoading').classList.add('hidden');
-        document.getElementById('translateResult').classList.remove('hidden');
-
-        if (presetData) {
-          document.getElementById('translatedQuote').innerText = presetData.quote;
-          document.getElementById('underlyingNeed').innerText = presetData.need;
-          document.getElementById('whyItWorks').innerText = presetData.works;
-        } else {
-          document.getElementById('translatedQuote').innerText = `"When this comes up, I feel a lot of stress because our relationship means so much to me. I want us to be on the same page. Can we pause and look at this as us against the problem, rather than against each other?"`;
-          document.getElementById('underlyingNeed').innerText = "Vulnerability, fear of disconnection, wanting partnership reassurance.";
-          document.getElementById('whyItWorks').innerText = "Shifts posture from adversarial blame to collaborative problem-solving.";
-        }
-        lucide.createIcons();
-      }, 550);
-    }
-
-    // 60-Second Relationship Clarity Pulse Logic
+    // Conflict Compass Quiz Logic
     const quizQuestions = [
       {
         title: "Communication Rhythm",
         question: "When you and your partner disagree, what typically happens?",
         options: [
-          { text: "One of us shuts down or walks away while the other gets frustrated", type: "withdrawer" },
+          { text: "One of us shuts down / goes into flat-affect while the other gets frustrated", type: "withdrawer" },
           { text: "We rarely fight, but we live like polite roommates with little romance", type: "roommate" },
-          { text: "Arguments escalate quickly into hurtful words and days of silence", type: "conflict" },
+          { text: "Arguments escalate quickly into hurtful words, volume spikes, and days of silence", type: "conflict" },
           { text: "We communicate decently, but we want to reignite our early passion", type: "passion" }
         ]
       },
@@ -1499,7 +1492,7 @@
         title: "Emotional Connection",
         question: "How would you describe the feeling when you are in the same room?",
         options: [
-          { text: "Tense or walking on eggshells, worried about starting a fight", type: "conflict" },
+          { text: "Tense or walking on eggshells, worried about triggering an explosion", type: "conflict" },
           { text: "Friendly and cordial, but emotionally distant or surface-level", type: "roommate" },
           { text: "One partner is constantly trying to reach out, but feels shut out", type: "withdrawer" },
           { text: "Warm, but life's logistics and kids have drained our spark", type: "passion" }
@@ -1667,12 +1660,12 @@
         let reply = "That's a very common struggle that Dr. Liz sees every week. In her 38 years as a couples therapist, she's found that shifting the tone of communication from blame to vulnerable needs opens up breakthroughs faster than anything else.";
         
         const lower = msg.toLowerCase();
-        if (lower.includes("adhd") || lower.includes("neuro") || lower.includes("autis") || lower.includes("rsd")) {
+        if (lower.includes("weaponized")) {
+          reply = "Weaponized neurodivergence occurs when one partner uses another's diagnosis (like ADHD blurting or autistic flat affect) as moral permission to explode, insult, or refuse accountability. In Dr. Liz's practice, we replace judgment with brain-aware accountability for both partners.";
+        } else if (lower.includes("adhd") || lower.includes("neuro") || lower.includes("autis") || lower.includes("rsd")) {
           reply = "Neurodivergent relationships require neuro-affirming tools! Dr. Liz specializes in decoding ADHD executive function, sensory overwhelm, and rejection sensitivity (RSD) so couples stop blaming each other for how their brains process information.";
         } else if (lower.includes("partner won't") || lower.includes("refuses") || lower.includes("husband")) {
           reply = "You don't both have to start at the exact same moment! Dr. Liz often works 1:1 with one partner first. When you learn how to stop triggering your partner's defensiveness, the dynamic shifts so positively that they often ask to join in on the second or third session.";
-        } else if (lower.includes("smart restart") || lower.includes("3-step") || lower.includes("how does")) {
-          reply = "The 3-Step Smart Restart consists of: 1) Repair (stopping negative conflict loops), 2) Restore (rebuilding emotional safety & trust), and 3) Renew (reigniting playful passion and daily micro-habits). It’s designed to produce shifts in weeks, not years.";
         } else if (lower.includes("book") || lower.includes("consult") || lower.includes("cost") || lower.includes("price")) {
           reply = "Dr. Liz offers a complimentary Relationship Strategy Call so you can talk through what's happening and see if the VIP coaching or courses are a fit. You can click 'Book Free Consult' at the top of the page to choose a time that works for you!";
         }
@@ -1703,9 +1696,8 @@
       document.getElementById('cheatSheetSuccess').classList.remove('hidden');
     }
 
-    // Initialize Quiz & Neuro tool on Load
+    // Init
     renderQuizStep();
-    runNeuroAnalysis();
   </script>
 </body>
 </html>
